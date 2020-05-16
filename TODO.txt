@@ -1,2 +1,3 @@
 TODO:
-Resume link 
+- Resume link 
+- who I am: put more left margin
