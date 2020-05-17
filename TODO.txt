@@ -1,6 +1,8 @@
 TODO:
 - add skills in little boxes 
+- add skills under research & experience 
 - Resume link 
 - who I am: put more left margin (use padding-left)
 - photoshop photo background to white 
 - change cover photo 
+- add margin to scan & bu logo
