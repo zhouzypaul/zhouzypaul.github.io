@@ -407,13 +407,21 @@ padding-top:60px;
 	font-size: 58px;
 	color: #5E5E5E;
 }
-.tileBox p {
+.tileBox {
 	background-color: #f0f0f0;
 	font-size: 15px;
 	color: #777777;
 	padding: 20px;
 	margin: 0px;
+	overflow: auto;
 }
+/* .tileBox ul {
+	background-color: #f0f0f0;
+	font-size: 15px;
+	color: #777777;
+	padding: 20px;
+	margin: 0px;
+} */
 /*parlex*/
 .bg-parlex {
 	padding-top: 0px;
@@ -1033,4 +1041,23 @@ nav#filter li {
 	-ms-user-select: none;
 	user-select: none;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* ---------logo------------- */
+.logo{
+	display:flex;
+	align-items: center;
+}
+
+/* --------text alignment--------- */
+.right{
+    float:right;
+}
+
+.left{
+    float:left;
+}
+
+/* ----------background---------- */
+.greyBackground{
+	background-color: #f0f0f0;
 }
