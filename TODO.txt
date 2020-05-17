@@ -1,4 +1,5 @@
 TODO:
+- add skills in little boxes 
 - Resume link 
 - who I am: put more left margin
 - photoshop photo background to white 
