@@ -1070,3 +1070,25 @@ nav#filter li {
 	margin-right: auto;
 	width: 50%;
 }
+
+/* ------------button--------- */
+.button {
+	text-align: left;
+	/* background-color: white; */
+}
+
+.button a {
+	border:2px solid white;
+	border-radius:2px;
+	padding:8px;
+	opacity:1;
+	color:white;
+	font-size: medium;
+}
+
+.button a:hover {
+	/* background-color:black; */
+	/* color:#F4F4F7 */
+	background-color: white;
+	color: black;
+}

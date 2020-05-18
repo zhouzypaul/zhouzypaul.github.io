@@ -3,8 +3,7 @@ TODO:
 - fix the submit button in "contact me"
 - upload projects 
 - add skills under research & experience 
-- Resume link 
-- who I am: put more left margin (use padding-left)
+
 - photoshop photo background to white 
 - change cover photo 
 - add margin to scan & bu logo
