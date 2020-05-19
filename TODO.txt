@@ -1,5 +1,4 @@
 TODO:
-- add skills in little boxes 
 - fix the submit button in "contact me"
 - upload projects 
 - add skills under research & experience 

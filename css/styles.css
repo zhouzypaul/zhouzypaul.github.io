@@ -1071,7 +1071,7 @@ nav#filter li {
 	width: 50%;
 }
 
-/* ------------button--------- */
+/* ------------resume button--------- */
 .button {
 	text-align: left;
 	/* background-color: white; */
@@ -1091,4 +1091,22 @@ nav#filter li {
 	/* color:#F4F4F7 */
 	background-color: white;
 	color: black;
+}
+
+/* --------skill boxes ------------ */
+.skills {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-ms-flex-wrap:wrap;
+	flex-wrap:wrap;
+}
+
+.skill {
+	background:rgba(129,211,249,0.5);
+	font-size:12px;
+	margin-right:10px;
+	margin-bottom:10px;
+	padding:3px 10px;
+	text-transform:lowercase;
 }
