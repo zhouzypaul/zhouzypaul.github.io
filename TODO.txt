@@ -1,8 +1,8 @@
 TODO:
 - fix the submit button in "contact me"
 - upload projects 
-- add skills under research & experience 
 
 - photoshop photo background to white 
 - change cover photo 
 - add margin to scan & bu logo
+- take out the acknowledgment of template 
