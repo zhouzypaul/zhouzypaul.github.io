@@ -161,6 +161,8 @@ background: #000 !important;
 -moz-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 }
+
+
 /*.carousel-inner*/
 #myCarousel {
 	margin-top: 50px;
@@ -430,7 +432,11 @@ padding-top:60px;
 	color: #777777;
 	padding: 20px;
 	margin: 0px;
+	overflow: auto;
 } */
+
+
+
 /*parlex*/
 .bg-parlex {
 	padding-top: 0px;
