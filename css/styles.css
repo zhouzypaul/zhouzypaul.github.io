@@ -415,7 +415,15 @@ padding-top:60px;
 
 /* -----------------------Research ---------------------------------------*/
 .institution-bottom-pad {
-	padding-bottom: 3%;
+	padding-bottom: 2%;
+}
+.research-pic-pad {
+	padding-bottom: 0%;
+	padding-left: 15%;
+}
+.research-pic-pad-two {
+	padding-bottom: 5%;
+	padding-left: 15%;
 }
 
 
@@ -472,6 +480,15 @@ padding-top:60px;
 }
 .progress-bar {
 	background-color: #FF7A00;
+}
+
+.experience-pic-pad {
+	padding-bottom: 4%;
+	padding-left: 15%;
+}
+.experience-pic-pad-two {
+	padding-bottom: 8%;
+	padding-left: 15%;
 }
 
 
