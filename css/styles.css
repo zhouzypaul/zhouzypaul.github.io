@@ -387,7 +387,7 @@ padding-top:60px;
 	background-color: #f0f0f0;
 	font-size: 15px;
 	color: #777777;
-	padding: 20px;
+	padding: 15px;
 	margin: 0px;
 	overflow: auto;
 } */
@@ -404,6 +404,7 @@ padding-top:60px;
 .row-skills {
 	float: left;
 	padding-left: 2%;
+	/* color: black; */
 }
 .tileBox > div{
 	display: block;
@@ -483,11 +484,15 @@ padding-top:60px;
 }
 
 .experience-pic-pad {
-	padding-bottom: 4%;
+	padding-bottom: 5%;
 	padding-left: 15%;
 }
 .experience-pic-pad-two {
 	padding-bottom: 8%;
+	padding-left: 15%;
+}
+.experience-pic-pad-three {
+	padding-bottom: 7%;
 	padding-left: 15%;
 }
 
