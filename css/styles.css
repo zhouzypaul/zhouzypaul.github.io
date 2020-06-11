@@ -163,52 +163,6 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 }
 
 
-/*.carousel-inner*/
-#myCarousel {
-	margin-top: 50px;
-	border-bottom: 4px solid #FF7A00;
-}
-.carousel-inner > .item {
-}
-.carousel-caption {
-	padding: 0px;
-	bottom: 40%;
-	display: block;
-	height: 80px;
-}
-.carousel-caption h1 {
-	font-size: 45px;
-	padding: 10px 15px;
-	background: rgba(128, 180, 33, 0.80);
-	color: #FFFFFF;
-	text-shadow: none;
-	font-weight: bold;
-	display: inline-block;
-}
-.carousel-caption h3 {
-	font-size: 30px;
-	color: #1C4604;
-	font-weight: bold;
-	text-shadow: #fff 1px 1px 1px;
-}
-.actionPanel {
-	padding: 25px 0;
-	background: #FF7A00;
-}
-.actionPanel h3 {
-	margin: 0px;
-}
-.circle {
-	background: #FF7A00;
-	height: 60px;
-	width: 60px;
-	border-radius: 35px;
-	color: #fff;
-	line-height: 60px !important;
-}
-
-
-
 
 /*----Nav -------------------------------------------------------------------*/
 .header .navbar-brand {
@@ -283,7 +237,10 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 .darkBg .fa {
 	color: #FF7A00;
 }
-/*--- Banner ----*/
+
+
+
+/*----- Banner: main page -------------------------------------------------*/
 .banner-container {
 	width: 100%;
 	position: relative;
@@ -437,7 +394,25 @@ padding-top:60px;
 
 
 
-/*parlex*/
+/* ---- about me ---------------------------------------------------------- */
+.first-col {
+	padding-left: 5%;
+}
+.second-col {
+	padding-left: 5%;
+}
+.row-skills {
+	float: left;
+	padding-left: 2%;
+}
+.tileBox > div{
+	display: block;
+}
+#honor-padding {
+	padding-top: 18%;
+}
+
+/* ----- parlex: quote -------------------------------------------------------*/
 .bg-parlex {
 	padding-top: 0px;
 	background-image: url('../images/banner-bg.jpg');
@@ -453,74 +428,8 @@ padding-top:60px;
 .parlex-back h2{
 	margin:0 20px;
 }
-/*Skills*/
-.skilltitle {
-	text-align: right;
-	font-weight: 600;
-	padding-right: 0px;
-}
-.progress {
-	border-radius: 0px;
-	height: 10px;
-	margin-top: 5px;
-	background-color: #D6D6D6;
-}
-.progress .progress-bar {
-	background-color: rgb(0, 187, 255) rgb(0, 187, 255) transparent transparent;
-}
-/*Skills*/
-.chart {
-	position: relative;
-	display: inline-block;
-	width: 154px;
-	height: 154px;
-	text-align: center;
-	border-radius: 50%;
-	background-color: #FFF;
-}
-.diagram { 
-	margin: 2em 2em 2em 0;
-	float: left;
-}
-.chart-text {
-	margin-top: 106px;
-}
-.skillContainer{
-	margin-bottom: 50px;	
-	}
-.skillBox { 
-min-height:200px;
-}
-.container-sub {
-	width: 100%;
-	position: relative;
-	margin: 0 auto;
-}
-.percent {
-	display: inline-block;
-	line-height: 110px;
-	z-index: 2;
-	font-size: 40px;
-	font-family: 'Oswald', sans-serif;
-	font-weight: 400;
-	letter-spacing: -1px;
-	margin: 21px 0 0 0;
-	color: #ffb400;
-}
-.percent:after {
-	content: '%';
-	margin-left: 0.1em;
-	font-family: 'Oswald', sans-serif;
-	font-weight: 100;
-}
-.chart canvas {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-.chart-text h4 { 
-	font-size: 23px;
-}
+
+
 
 
 
@@ -559,88 +468,7 @@ min-height:200px;
 
 
 
-
-/* Services
-    -----------------------------------------------------------------------*/
-.grid .text-content {
-	padding-left: 35%;
-}
-.grid .text-content {
-	display: block;
-	padding-left: 19%;
-	padding-right: 8%;
-}
-.grid .grid-item {
-}
-.grid .text-content h5 {
-	font-weight: bold;
-}
-.grid .grid-item .item-content {
-	display: block;
-	outline: none;
-	text-decoration: none;
-	padding: 20px 0;
-}
-.item-content .fa {
-	position: absolute;
-	color: #646464;
-	font-size: 4.5em;
-	top: 36px;
-}
-/* Team
-    ---------------------------------------------------*/
-.team-member {
-	margin-bottom: 15px;
-}
-.member-img {
-	overflow: hidden;
-}
-.team-member .member-img img {
-	max-width: 250px;
-	margin: 0 auto;
-	border: 1px solid #FF7A00;
-}
-.team-member h4 {
-	font-size: 19px;
-	line-height: 32px;
-	margin: 10px 0 0 15px;
-	text-align: center;
-}
-.team-member .pos {
-	display: block;
-	margin: 0 0 0 15px;
-	text-align: center;
-}
-.team-member .contact a {
-	padding: 0 8px;
-}
-.descrition {
-	min-height: 90px;
-	/*text-align: center;*/
-    /*border-bottom: 1px solid #dadde2;*/
-	padding: 5px 15px;
-}
-.team-member {
-	padding-top: 5px;
-}
-.team-socials {
-	margin: 15px 0;
-	display: block;
-	text-align: center;
-}
-.team-socials i {
-	width: 42px;
-	height: 42px;
-	line-height: 42px;
-	background: transparent;
-	border: 2px solid #E7EBEF;
-	margin: 0px 5px 0px 0px;
-	position: relative;
-	display: inline-block;
-	text-align: center;
-	font-size: 18px;
-}
-/* ------- */
+/* ----- projects --------------------------------------------------------- */
 .parlex-back h2{font-size:32px !important;}
 .isotopeWrapper article {
 	margin-bottom: 30px;
@@ -836,24 +664,6 @@ footer {
 }
  
 /*Clients*/
-.clients #owl-demo .item {
-	background: none;
-}
-.clients .helper {
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
-}
-.clients .helper img {
-	vertical-align: middle;
-	max-height: 70px;
-	max-width: 80%;
-}
-.clients .customNavigation > a {
-	font-size: 25px;
-	cursor: pointer;
-	margin: 0px 5px;
-}
 #projects{
 background: url(../images/bg2.png) top repeat;	
 	}
@@ -1127,6 +937,7 @@ nav#filter li {
 	display:flex;
 	-ms-flex-wrap:wrap;
 	flex-wrap:wrap;
+	background-color: transparent;
 }
 
 .skill {
