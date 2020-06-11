@@ -364,37 +364,22 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 	color: #FFD2A8;
 	font-size: 16px;
 }
-#aboutUs{
-padding-top:60px;	
-	}
-#aboutUs .txtHead {
-	background: #fff;
-	padding: 20px 10px;
-}
-#aboutUs .txtHead .fa {
-	font-size: 58px;
-	color: #5E5E5E;
-}
-.tileBox {
-	background-color: #f0f0f0;
-	font-size: 15px;
-	color: #777777;
-	padding: 20px;
-	margin: 0px;
-	overflow: auto;
-}
-/* .tileBox ul {
-	background-color: #f0f0f0;
-	font-size: 15px;
-	color: #777777;
-	padding: 15px;
-	margin: 0px;
-	overflow: auto;
-} */
 
 
 
 /* ---- about me ---------------------------------------------------------- */
+#aboutMe{
+	padding-top:0px;	
+}
+#aboutMe .txtHead {
+	background: #fff;
+	padding: 0px 0px;
+}
+#aboutMe .txtHead .fa {
+	font-size: 58px;
+	color: #5E5E5E;
+}
+
 .first-col {
 	padding-left: 5%;
 }
@@ -404,13 +389,27 @@ padding-top:60px;
 .row-skills {
 	float: left;
 	padding-left: 2%;
-	/* color: black; */
+	margin: 3px;
 }
 .tileBox > div{
 	display: block;
 }
-#honor-padding {
-	padding-top: 18%;
+.tileBox > p {
+	margin-bottom: 0px;
+}
+.tileBox {
+	background-color: #f0f0f0;
+	font-size: 15px;
+	color: #777777;
+	padding: 20px;
+	margin: 0px;
+	overflow: auto;
+}
+.tileBox .skill .skills {
+	display: block;
+	font-size: 15px;
+	margin-bottom: 10px;
+	overflow: auto;
 }
 
 
