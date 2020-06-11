@@ -348,28 +348,51 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 
 
 
-/*Intro Text ------------------------------------------------------------*/
+/*------------------------- Intro Text ---------------------------------*/
 #introText {
 	padding: 50px 0;
-	background: #FF7A00;
+	/* background: #FF7A00; */
+	background: #f0f0f0;
 }
 #introText h1 {
 	font-size: 40px;
 	margin: 0;
 	padding-bottom: 16px;
 	font-variant: small-caps;
-	color: #fff;
+	color:black;
 }
 #introText p {
 	color: #FFD2A8;
 	font-size: 16px;
 }
 
+/* --resume button-- */
+.button {
+	text-align: left;
+	/* background-color: white; */
+}
+
+.button a {
+	border:2px solid white;
+	border-radius:2px;
+	padding:8px;
+	opacity:1;
+	color:white;
+	font-size: medium;
+}
+
+.button a:hover {
+	/* background-color:black; */
+	/* color:#F4F4F7 */
+	background-color: white;
+	color: black;
+}
+
 
 
 /* ---- about me ---------------------------------------------------------- */
 #aboutMe{
-	padding-top:0px;	
+	padding-top:20px;	
 }
 #aboutMe .txtHead {
 	background: #fff;
@@ -413,25 +436,12 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 }
 
 
-/* -----------------------Research ---------------------------------------*/
-.institution-bottom-pad {
-	padding-bottom: 2%;
-}
-.research-pic-pad {
-	padding-bottom: 0%;
-	padding-left: 15%;
-}
-.research-pic-pad-two {
-	padding-bottom: 5%;
-	padding-left: 15%;
-}
-
 
 
 /* ----- parlex: quote -------------------------------------------------------*/
 .bg-parlex {
 	padding-top: 0px;
-	background-image: url('../images/banner-bg.jpg');
+	background-image: url('../images/brown_fall.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -445,6 +455,22 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 	margin:0 20px;
 }
 
+
+
+
+
+/* -----------------------Research ---------------------------------------*/
+.institution-bottom-pad {
+	padding-bottom: 2%;
+}
+.research-pic-pad {
+	padding-bottom: 0%;
+	padding-left: 15%;
+}
+.research-pic-pad-two {
+	padding-bottom: 5%;
+	padding-left: 15%;
+}
 
 
 
@@ -937,27 +963,7 @@ nav#filter li {
 	width: 50%;
 }
 
-/* ------------resume button---------------------------------------------- */
-.button {
-	text-align: left;
-	/* background-color: white; */
-}
 
-.button a {
-	border:2px solid white;
-	border-radius:2px;
-	padding:8px;
-	opacity:1;
-	color:white;
-	font-size: medium;
-}
-
-.button a:hover {
-	/* background-color:black; */
-	/* color:#F4F4F7 */
-	background-color: white;
-	color: black;
-}
 
 /* --------skill boxes --------------------------------------------------- */
 .skills {
