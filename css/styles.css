@@ -11,8 +11,8 @@ body {
 	background: #fff;
 }
 ::selection {
-	color: #fff;
-	background: #FF7A00;
+	/* color: black; */
+	background: #ACCEF7;
 }
 
 ::-moz-selection {
@@ -576,7 +576,7 @@ nav#filter a {
 }
 .projects-item .projects-desc {
 	display: block;
-	opacity: 0;
+	opacity: 1;
 	position: absolute;
 	width: 100%;
 	left: 0;
