@@ -298,9 +298,11 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 	font-weight: normal;
 }
 .caption {
-	border-bottom: 1px solid #7a7a7a;
-	border-top: 1px solid #7a7a7a;
-	color: #aeaeae;
+	/* original color: #7a7a7a */
+	border-bottom: 1px solid #FFF;
+	border-top: 1px solid #FFF;
+	/* color: #aeaeae; */
+	color: #FFF;
 	padding: 15px 0;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -373,18 +375,19 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 }
 
 .button a {
-	border:2px solid white;
+	border:2px solid rgba(129,211,249,0.5);
 	border-radius:2px;
 	padding:8px;
 	opacity:1;
-	color:white;
+	color: grey;
 	font-size: medium;
+	background-color: rgba(129,211,249,0.5);
 }
 
 .button a:hover {
 	/* background-color:black; */
 	/* color:#F4F4F7 */
-	background-color: white;
+	background-color: #f0f0f0;
 	color: black;
 }
 
