@@ -1,3 +1,5 @@
 # paulzhou69.github.io
-this is my personal website
+Personal website of Zhiyuan 'Paul' Zhou 
+
+github username: paulzhou69
 
