@@ -4,3 +4,6 @@ _posts
 .jekyll-cache
 .jekyll-metadata
 vendor
+TODO.txt
+about.markdown
+index.markdown
