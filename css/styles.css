@@ -985,5 +985,5 @@ nav#filter li {
 	margin-right:10px;
 	margin-bottom:10px;
 	padding:3px 10px;
-	text-transform:lowercase;
+	/* text-transform:lowercase; */
 }
