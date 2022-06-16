@@ -10,11 +10,11 @@ Hi there! Welcome to my home page.
 
 I'm Zhiyuan; my friends call me Paul. I'm an AI researcher and ML engineer.
 
-Currently, I'm a rising senior at Brown University studying Applied Math and Computer Science. I spend a lot of time doing research on Reinforcement Learning (RL), and I'm fortunate to be advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael Littman](https://www.littmania.com) under Brown's [Big AI Initiative](http://bigai.cs.brown.edu).
+Currently, I'm a rising senior at Brown University studying Applied Math and Computer Science. I spend a lot of time doing research on Reinforcement Learning (RL), and I'm fortunate to be advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael Littman](https://www.littmania.com) under Brown's [Big AI Initiative](http://bigai.cs.brown.edu). Checkout my [research page](/_pages/research.md) for more information.
 
 Outside of this, I like to jam on my guitar, play badminton, and watch standups and movies. 
 
-If you'd like to get in contact with me, simple email me at [zhouzy@brown.edu](mailto:zhouzy@brown.edu).
+If you'd like to get in contact with me, simply email me at [zhouzy@brown.edu](mailto:zhouzy@brown.edu).
 
 ## Recent News
 last updated: June 7th, 2022

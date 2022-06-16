@@ -106,7 +106,7 @@ analytics:
 author:
   name             : 'Zhiyuan "Paul" Zhou'
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a senior at Brown studying Applied Math and CS."
+  bio              : "I am a senior at Brown studying Applied Math and CS. I do research in Reinforcement Learning."
   location         : "Providence, RI"
   email            :
   links:
