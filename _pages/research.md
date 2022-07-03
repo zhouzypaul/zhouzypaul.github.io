@@ -6,6 +6,8 @@ permalink: /research/
 I am broadly interested in building human level intelligence. I believe that Reinforcement Learning (RL) provides a powerful framework for building AI systems, and reward is a good enough incentive to induce approximations of intelligence. To that end, I work on **hierarchical RL, transfer RL, generalization, and reward design**. I am fortunate to be advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael Littman](https://www.littmania.com) under Brown's [BigAI initiative](http://bigai.cs.brown.edu). Feel free to check out some of my work below. 
 {: style="text-align: center;font-size:110%;padding-top:40px"}
 
+<!-- style -->
+<link rel="stylesheet" href="/assets/css/styles.css">
 
 
 ## Publications
@@ -23,6 +25,10 @@ I am broadly interested in building human level intelligence. I believe that Rei
               <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
               Characterizing the Action Generalization Gap in Deep Q-Learning
               </p>
+              <div class="skills">
+                <span class="skill">DQN</span>
+                <span class="skill">action generalization</span>
+              </div>
               <strong>Zhiyuan Zhou</strong>,
               <a href="https://camallen.net">Cameron Allen</a>,
               <a href="https://cs.brown.edu/people/kasadiat/authors/kavosh-asadi/">Kavosh Asadi</a>,
@@ -54,6 +60,10 @@ I am broadly interested in building human level intelligence. I believe that Rei
               <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
               Designing Rewards for Fast Learning
               </p>
+              <div class="skills">
+                <span class="skill">reward design</span>
+                <span class="skill">Interactive RL</span>
+              </div>
               <a href="https://www.linkedin.com/in/henry-sowerby-a54aa592/">Henry Sowerby</a>,
               <strong>Zhiyuan Zhou</strong>,
               <a href="https://www.littmania.com">Michael Littman</a>
@@ -85,6 +95,12 @@ I am broadly interested in building human level intelligence. I believe that Rei
               <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
               Improving Post-Processing on Video Object Recognition Using Initial Measurement Unit
               </p>
+                <div class="skills">
+                  <span class="skill">object recognition</span>
+                  <span class="skill">Hidden Markov Models</span>
+                  <span class="skill">Kalman Filter</span>
+                  <span class="skill">Inertial Measurement Unit</span>
+                </div>
               <strong>Zhiyuan Zhou</strong>,
               <a href="https://rocketreach.co/spencer-boyum-email_78257776">Spencer Boyum</a>,
               <a href="https://vivo.brown.edu/display/mparadis">Michael Paradiso</a>
@@ -115,6 +131,12 @@ I am broadly interested in building human level intelligence. I believe that Rei
               <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
               Natural Language and Gesture Control for Robot Navigation
               </p>
+              <div class="skills">
+                <span class="skill">NLP</span>
+                <span class="skill">gesture control</span>
+                <span class="skill">navigation</span>
+                <span class="skill">robotics simulation</span>
+              </div>
               <a href="https://www.linkedin.com/in/ronald-baker-a978801b4/">Ronald Baker</a>,
               <strong>Zhiyuan Zhou</strong>,
               <a href="https://cs.brown.edu/people/stellex/">Stefanie Tellex</a>,

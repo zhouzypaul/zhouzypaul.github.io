@@ -1,0 +1,24 @@
+/* --------skill boxes --------------------------------------------------- */
+.skills {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-ms-flex-wrap:wrap;
+	flex-wrap:wrap;
+	background-color: transparent;
+}
+
+.skill {
+	background:rgba(129,211,249,0.5);
+	font-size:12px;
+	margin-right:10px;
+	margin-bottom:10px;
+	padding:3px 10px;
+	/* text-transform:lowercase; */
+}
+
+.row-skills {
+	float: left;
+	padding-left: 2%;
+	margin: 3px;
+}
