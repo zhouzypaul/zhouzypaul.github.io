@@ -4,7 +4,7 @@ layout: splash
 permalink: /
 ---
 
-![Zhiyuan Paul Zhou](/images/profile.jpg)
+![Zhiyuan Paul Zhou](/images/profile.JPG)
 {:style="float: right; padding: 30px; max-width: 30%;"}
 
 Hi there! Welcome to my home page. 
