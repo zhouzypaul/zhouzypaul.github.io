@@ -4,13 +4,16 @@ layout: splash
 permalink: /
 ---
 
-![Zhiyuan Paul Zhou](/images/profile.JPG){:style="float: right; padding: 30px; max-width: 40%; "}
+![Zhiyuan Paul Zhou](/images/profile.jpg)
+{:style="float: right; padding: 30px; max-width: 30%;"}
 
 Hi there! Welcome to my home page. 
 
 I'm Zhiyuan; my friends call me Paul. I'm an AI researcher and ML engineer.
 
 Currently, I'm a rising senior at Brown University studying Applied Math and Computer Science. I spend a lot of time doing research on Reinforcement Learning (RL), and I'm fortunate to be advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael Littman](https://www.littmania.com) under Brown's [BigAI Initiative](http://bigai.cs.brown.edu). Checkout my [research page](/_pages/research.md) for more information.
+
+I am currently seeking a PhD advisor for fall 2023.
 
 Outside of this, I like to jam on my guitar, play badminton, and watch standups and movies. 
 
