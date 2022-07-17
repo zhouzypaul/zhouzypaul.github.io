@@ -22,6 +22,7 @@ You may fork or clone this repo and use it as you wish, though I provide no warr
 - `index.md`: this is the main landing page. 
 - `assets/css/styles.css`: where I put my custom CSS.
 - `docs`, `images`, `pdfs`: my data directories. 
+- `_includes/footer.html`: modify the website footer info.
 
 ### Local dev
 ```bash
