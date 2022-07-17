@@ -29,5 +29,6 @@ bundle exec jekyll serve --livereload
 
 ### Resources Links
 Here are some resources/documentation that I've found useful when building the website:
+- getting started with Jekyll: [Jekyll](https://jekyllrb.com/)
 - configuring [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/docs/configuration/)
 - Minimal Mistakes's [Github repo page](https://github.com/mmistakes/minimal-mistakes)
