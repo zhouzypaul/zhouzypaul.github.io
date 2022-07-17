@@ -6,6 +6,7 @@ I built my website using code and inspiration from many that came before me, inc
 - the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme
 - the overall design of [Nishanth Kumar's](https://nishanthjkumar.com) website
 - the `Experience` page is inspired by that of [Lizhi Yang's](https://lzyang2000.github.io)
+
 and all the wonderful people that they referenced. 
 
 ### Usage
