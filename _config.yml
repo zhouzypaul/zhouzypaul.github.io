@@ -18,9 +18,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : 'Zhiyuan "Paul" Zhou'
 title_separator          : "-"
-subtitle                 :  # site tagline that appears below site title in masthead
+subtitle                 :  Portfolio website # site tagline that appears below site title in masthead
 name                     : 'Zhiyuan "Paul" Zhou'
-description              : "Zhiyuan Paul Zhou is a senior studying Applied Math and CS at Brown University, and doing AI Research in Reinforcement Learning with George Konidaris and Michael Littman."
+description              : "I am a senior studying Applied Math and CS at Brown University, and doing AI Research in Reinforcement Learning with George Konidaris and Michael Littman."
 url                      : 'https://zhouzypaul.github.io' # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : '/' # the subpath of your site, e.g. "/blog"
 repository               : 'zhouzypaul/zhouzypaul.github.io' # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
