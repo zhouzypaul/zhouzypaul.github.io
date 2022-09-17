@@ -6,7 +6,7 @@ permalink: /research/
 I am broadly interested in building human level intelligence. I believe that Reinforcement Learning (RL) provides a powerful framework for building AI systems, and reward is a good enough incentive to induce approximations of intelligence. To that end, I work on **hierarchical RL, transfer RL, generalization, and reward design**. I am fortunate to be advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael Littman](https://www.littmania.com) under Brown's [BigAI initiative](http://bigai.cs.brown.edu). Please check out my selected work below. 
 {: style="text-align: center;font-size:110%;padding-top:40px"}
 
-
+[CV](/pdfs/bio/CV.pdf) \|
 [Google Scholar](https://scholar.google.com/citations?user=U70VE-YAAAAJ&hl=en) \|
 [Github](https://github.com/zhouzypaul)
 {: style="text-align: center;font-size: 100%"}
