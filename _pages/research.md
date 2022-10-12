@@ -3,7 +3,8 @@ title: "Research"
 layout: splash
 permalink: /research/
 ---
-I am broadly interested in building human level intelligence. I believe that Reinforcement Learning (RL) provides a powerful framework for building AI systems, and reward is a good enough incentive to induce approximations of intelligence. To that end, I work on **hierarchical RL, transfer RL, generalization, and reward design**. I am fortunate to be advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael Littman](https://www.littmania.com) under Brown's [BigAI initiative](http://bigai.cs.brown.edu). Please check out my selected work below. 
+My research goal is to create human-level intelligence and enable autonomy for robots to complete a wide range of real-world tasks. To achieve this goal, I am especially interested in **generalization in RL** through **continual and lifelong learning** and **compositionality**. I think the ability to **transfer symbols and skills** that support high-level **planning** will be the basis of autonomy. I am beyond thrilled by the prospect of achieving embodied AI through integrating different perception and control modules, and so my interest also spans across **robotics** and **computer vision**. Additionally, I recognize that these intelligence agents will not be learning alone in the world, and that humans have a role to play in the learning process. To that end, I am also interested in the **reward design** problem to specify tasks and help agents learn faster and **imitation learning**. 
+I am fortunate to be advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael Littman](https://www.littmania.com) under Brown's [BigAI initiative](http://bigai.cs.brown.edu). Please check out my selected work below. 
 {: style="text-align: center;font-size:110%;padding-top:40px"}
 
 [CV](/pdfs/bio/CV.pdf) \|
