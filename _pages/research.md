@@ -3,7 +3,7 @@ title: "Research"
 layout: splash
 permalink: /research/
 ---
-My research ambition is to create human-level intelligence and enable autonomy for robots to complete a wide range of real-world tasks. To achieve this goal, I am especially interested in **generalization in Reinforcement Learning** through **continual and lifelong learning** and **compositionality**. I think the basis of machine intelligence is the ability to **transfer symbols and skills** that can be composed in different ways to adapt to continual changes in the environment. I am beyond thrilled by the prospect of achieving embodied AI through composing different perception and control modules, and so my interest also spans **robotics** and **computer vision**. Additionally, I recognize that these intelligent agents will not be learning alone in the world, there should be **multi-agent** coordination and humans have a role to play in the learning process. This leads to my interest in **imitation learning** and the **reward design** problem to specify tasks and help agents learn faster. 
+My research ambition is to build **autonomous robots** that can complete a wide variety of complex real-world tasks and continuously learn new ones. I believe this requires **efficient decision-making systems** that can learn from experience and generalize to new tasks. Therefore, I am especially interested in **generalization** in **reinforcement learning** through **continual or lifelong learning** and **compositionality**.
 I am fortunate to be advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael Littman](https://www.littmania.com) under Brown's [BigAI initiative](http://bigai.cs.brown.edu). Please check out my selected work below. 
 {: style="text-align: center;font-size:110%;padding-top:40px"}
 
@@ -19,6 +19,42 @@ I am fortunate to be advised by professors [George Konidaris](https://cs.brown.e
 
 ## Publications
 ### Conferences 
+
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <!-- <tr bgcolor="#ffffd0"> -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div>
+                <img src='/images/paper-images/tiered-reward.jpg' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
+              Specifying Behavior Preference with Tiered Reward Functions
+              </p>
+              <div class="skills">
+                <span class="skill">behavior specification</span>
+                <span class="skill">reward design</span>
+                <span class="skill">Pareto optimality</span>
+                <span class="skill">fast learning</span>
+              </div>
+              <strong>Zhiyuan Zhou</strong>,
+              <a href="https://www.linkedin.com/in/henry-sowerby-a54aa592/">Henry Sowerby</a>,
+              <a href="https://www.littmania.com">Michael Littman</a>
+              <br>
+				<em>In submission to AAAI</em>, 2023.
+              <br>
+              [<a href="">arXiv</a>]
+              [<a href="">code</a>]
+              <br>
+              <p>Proposes a strict partial ordering of the policy space to tradeoff policy-preference, then introduces a family of environment-independent tiered reward functions that are guaranteed to induce preferred policy. Finally, we show tiered rewards induce fast learning.<br>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+</table> 
+
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
           <!-- <tr bgcolor="#ffffd0"> -->
@@ -30,7 +66,7 @@ I am fortunate to be advised by professors [George Konidaris](https://cs.brown.e
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
-              Characterizing the Action Generalization Gap in Deep Q-Learning
+              Characterizing the Action-Generalization Gap in Deep Q-Learning
               </p>
               <div class="skills">
                 <span class="skill">DQN</span>
@@ -41,13 +77,13 @@ I am fortunate to be advised by professors [George Konidaris](https://cs.brown.e
               <a href="https://cs.brown.edu/people/kasadiat/authors/kavosh-asadi/">Kavosh Asadi</a>,
               <a href="https://cs.brown.edu/people/gdk/">George Konidaris</a>
               <br>
-				<em>5th Multidisciplinary Conference on Reinforcement Learning and Decision Making (RLDM)</em>, 2022.
+				<em>Multidisciplinary Conference on Reinforcement Learning and Decision Making (RLDM)</em>, 2022.
               <br>
               [<a href="https://arxiv.org/abs/2205.05588">arXiv</a>]
               [<a href="../pdfs/posters/actgen_rldm_poster.pdf">poster</a>]
               [<a href="https://github.com/camall3n/actgen">code</a>]
               <br>
-              <p>Introduces a way of evaluating action generalization in Deep Q-Learning using an oracle, and shows that DQN's ability to generalize over actions depends on the size of the action space. <br>
+              <p>Introduces a way of evaluating action-generalization in Deep Q-Learning using an oracle (expert knowledge of action similarity), and shows that DQN's ability to generalize over actions depends on the size of the action space. <br>
               </p>
             </td>
           </tr>
@@ -75,13 +111,13 @@ I am fortunate to be advised by professors [George Konidaris](https://cs.brown.e
               <strong>Zhiyuan Zhou</strong>,
               <a href="https://www.littmania.com">Michael Littman</a>
               <br>
-				<em>5th Multidisciplinary Conference on Reinforcement Learning and Decision Making (RLDM)</em>, 2022.
+				<em>Multidisciplinary Conference on Reinforcement Learning and Decision Making (RLDM)</em>, 2022. <FONT COLOR="red">(Oral) </FONT>
               <br>
               [<a href="https://arxiv.org/abs/2205.15400">arXiv</a>]
               [<a href="../pdfs/posters/optre_rldm_poster.pdf">poster</a>]
-              [<a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7adfa2ab-3dde-46ab-b69e-aea800efe5ef">talk at RLDM</a> at 1:20:00]
+              [<a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7adfa2ab-3dde-46ab-b69e-aea800efe5ef">oral at RLDM</a> at 1:20:00]
               <br>
-              <p>Identifies properties of rewards that lead to fast learning, and proposes an algorithm to design those rewards. Rewards should have big action gaps and small "subjective discounts".<br>
+              <p>Identifies properties of rewards that lead to fast learning: rewards should have big action gaps and small "subjective discounts". Proposes an algorithm to design these rewards.<br>
               </p>
             </td>
           </tr>
@@ -100,7 +136,7 @@ I am fortunate to be advised by professors [George Konidaris](https://cs.brown.e
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
-              Improving Post-Processing on Video Object Recognition Using Initial Measurement Unit
+              Improving Post-Processing on Video Object Recognition Using Inertial Measurement Unit
               </p>
                 <div class="skills">
                   <span class="skill">object recognition</span>
@@ -112,11 +148,12 @@ I am fortunate to be advised by professors [George Konidaris](https://cs.brown.e
               <a href="https://rocketreach.co/spencer-boyum-email_78257776">Spencer Boyum</a>,
               <a href="https://vivo.brown.edu/display/mparadis">Michael Paradiso</a>
               <br>
-				<em>Brown Undergraduate Research Journal</em>, Spring 2022. (Work was done in Summer 2020, published in 2022.)
+				<em>Brown Undergraduate Research Journal</em>, Spring 2022.
               <br>
               [<a href="https://brownresearchclub.weebly.com/spring-2022.html">paper</a> on page 29]
+              [<a href="https://github.com/zhouzypaul/object-recognition-imu">code</a>]
               <br>
-              <p>Proposes Kalman Filter models to improving the quality of object recognition on videos using spatial and temporal data from Inertial Measurement Unit.<br>
+              <p> How to improve the accuracy of object recognition in videos if given per-frame inertial measurements of the camera. We propose two way to do so.<br>
               </p>
             </td>
           </tr>
@@ -153,7 +190,7 @@ I am fortunate to be advised by professors [George Konidaris](https://cs.brown.e
               [<a href="../pdfs/papers/nl-gesture-paper.pdf">paper</a>]
               [<a href="https://drive.google.com/file/d/1n_2syscPwRcwtKXXp40UMu6Vl1x3uDok/view?usp=sharing">demo video</a>]
               <br>
-              <p>Created a pipeline that enables a robot to navigate to a destination more accurately, using pointing gestures to corroborate natural language commands.<br>
+              <p>Created a pipeline that instructs a robot to navigate to a destination more accurately, using pointing gestures to corroborate natural language commands.<br>
               </p>
             </td>
           </tr>

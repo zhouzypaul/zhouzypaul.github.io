@@ -11,17 +11,16 @@ Hi there! Welcome to my home page.
 
 I'm Zhiyuan; my friends call me Paul. I'm an AI researcher and ML engineer.
 
-Currently, I'm a senior at Brown University studying Applied Math and Computer Science. I spend a lot of time doing research on Reinforcement Learning (RL), and I'm fortunate to be advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael Littman](https://www.littmania.com) under Brown's [BigAI Initiative](http://bigai.cs.brown.edu). I am also becoming more and more interested in Robotics. Checkout my [research page](/research/) for more information.
-
-I am currently seeking a PhD advisor for fall 2023. I am most interested in generalization in RL through lifelong learning and compositionality, and I would love to work with robots! My full research interests can be found on my [research page](/research/).
+Currently, I'm a senior at Brown University studying Computer Science and Applied Math. I spend a lot of time doing research on reinforcement learning, and I'm fortunate to be advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael L Littman](https://www.littmania.com) under Brown's [BigAI Initiative](http://bigai.cs.brown.edu). I am also becoming interested in robot learning. Checkout my [research page](/research/) for more information.
 
 Outside of this, I like to jam on my guitar, play badminton, and watch standups and movies. 
 
-I love connecting with people. If you'd like to get in contact with me, simply email me at [zhouzy@brown.edu](mailto:zhouzy@brown.edu).
+I love connecting with people. If you'd like to get in contact with me, please reach out at [zhouzy@brown.edu](mailto:zhouzy@brown.edu).
 
 ## Recent News
-last updated: July 29th, 2022
+last updated: Nov 25th, 2022
+- One paper submitted to ICLR 23 and one to AAAI 23
 - I gave a 30min talk at [Brown Robotics Lab](http://robotics.cs.brown.edu) on Pareto Optimal Reward Funcitons. (July 29th)
 - I'm honored that our paper [Designing Rewards for Fast Learning](https://arxiv.org/abs/2205.15400?context=cs.AI) is selected for oral presentation at RLDM2022! Check out the recording [here](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7adfa2ab-3dde-46ab-b69e-aea800efe5ef) at 1:20:22.
-- Our work [Characterizing the Action Generalization Gap in Deep Q-Learning](https://arxiv.org/abs/2205.05588) is accepted into RLDM2022!
-- The research project I did my freshman summer [Improving Post-Processing on Video Object Recognition Using Initial Measurement Unit](https://brownresearchclub.weebly.com/spring-2022.html) has been published on the Brown Undergraduate Research Journal
+- Our work [Characterizing the Action-Generalization Gap in Deep Q-Learning](https://arxiv.org/abs/2205.05588) is accepted into RLDM2022!
+- The research project I did my freshman summer [Improving Post-Processing on Video Object Recognition Using Inertial Measurement Unit](https://brownresearchclub.weebly.com/spring-2022.html) has been published on the Brown Undergraduate Research Journal
