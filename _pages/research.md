@@ -3,7 +3,7 @@ title: "Research"
 layout: splash
 permalink: /research/
 ---
-My research ambition is to build **autonomous robots** that can complete a wide variety of complex real-world tasks and continuously learn new ones. I believe this requires **efficient decision-making systems** that can learn from experience and generalize to new tasks. Therefore, I am especially interested in **generalization** in **reinforcement learning** through **continual or lifelong learning** and **compositionality**.
+My research ambition is to build **autonomous robots** that can complete a wide variety of complex real-world tasks and continuously learn new ones. **Reinforcement Learning** (RL) is a powerful framework that allows robots to learn and adapt to new situations online. However, for an RL algorithm to be practical, it must be able to learn from very few samples. I believe this calls for decision-making systems that can learn useful abstractions and use it to quickly generalize to new tasks. I believe that data efficiency requires the ability to learn abstractions that can be reused in new tasks and can be composed temporally and hierarchically to adapt to continual changes in the environment. Therefore, I am especially interested in **generalization** in RL through **continual or lifelong learning** and **compositionality**.
 I am fortunate to be advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael Littman](https://www.littmania.com) under Brown's [BigAI initiative](http://bigai.cs.brown.edu). Please check out my selected work below. 
 {: style="text-align: center;font-size:110%;padding-top:40px"}
 
