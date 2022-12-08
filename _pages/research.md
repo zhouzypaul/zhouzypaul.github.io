@@ -45,8 +45,8 @@ I am fortunate to be advised by professors [George Konidaris](https://cs.brown.e
               <br>
 				<em>In submission to AAAI</em>, 2023.
               <br>
-              [<a href="">arXiv</a>]
-              [<a href="">code</a>]
+              [<a href="https://arxiv.org/abs/2212.03733">arXiv</a>]
+              [<a href="https://github.com/zhouzypaul/tiered-reward">code</a>]
               <br>
               <p>Proposes a strict partial ordering of the policy space to tradeoff policy-preference, then introduces a family of environment-independent tiered reward functions that are guaranteed to induce preferred policy. Finally, we show tiered rewards induce fast learning.<br>
               </p>
