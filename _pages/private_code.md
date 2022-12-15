@@ -1,5 +1,5 @@
 ---
-title: "Research"
+title: "404"
 layout: splash
 permalink: /private_projects/
 ---
