@@ -5,8 +5,9 @@ permalink: /
 ---
 
 ![Zhiyuan Paul Zhou](./images/profile.JPG)
-{:style="float: right; padding: 30px; max-width: 30%;"}
+{:style="float: right; padding: 30px; max-width: 30%; min-width: 320px;"}
 
+<br/>
 Hi there! Welcome to my home page. 
 
 I'm Zhiyuan; my friends call me Paul. I'm an AI researcher and ML engineer.
