@@ -5,7 +5,7 @@ permalink: /
 ---
 
 ![Zhiyuan Paul Zhou](./images/profile.JPG)
-{:style="float: right; padding: 30px; max-width: 30%; min-width: 320px;"}
+{:style="float: right; padding: 30px; max-width: 30%; min-width: 330px;"}
 
 <br/>
 Hi there! Welcome to my home page. 
@@ -21,7 +21,6 @@ I love connecting with people. If you'd like to get in contact with me, please r
 ## Recent News
 last updated: Nov 25th, 2022
 - New preprint out: [Specifying Behavior Preference with Tiered Reward Functions](https://arxiv.org/abs/2212.03733)
-- One paper submitted to ICLR 23 and one to AAAI 23
 - I gave a 30min talk at [Brown Robotics Lab](http://robotics.cs.brown.edu) on Pareto Optimal Reward Funcitons. (July 29th)
 - I'm honored that our paper [Designing Rewards for Fast Learning](https://arxiv.org/abs/2205.15400?context=cs.AI) is selected for oral presentation at RLDM2022! Check out the [recording](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7adfa2ab-3dde-46ab-b69e-aea800efe5ef) at 1:20:22.
 - Our work [Characterizing the Action-Generalization Gap in Deep Q-Learning](https://arxiv.org/abs/2205.05588) is accepted into RLDM2022!
