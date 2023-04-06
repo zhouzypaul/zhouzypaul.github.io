@@ -19,7 +19,8 @@ Outside of this, I like to jam on my guitar, play badminton, and watch standups 
 I love connecting with people. If you'd like to get in contact with me, please reach out at [zhouzy@brown.edu](mailto:zhouzy@brown.edu).
 
 ## Recent News
-last updated: Nov 25th, 2022
+last updated: April 6th, 2023
+- I'm excited to start my Ph.D. at [Berkeley AI Research](https://bair.berkeley.edu) in the fall!
 - New preprint out: [Specifying Behavior Preference with Tiered Reward Functions](https://arxiv.org/abs/2212.03733)
 - I gave a 30min talk at [Brown Robotics Lab](http://robotics.cs.brown.edu) on Pareto Optimal Reward Funcitons. (July 29th)
 - I'm honored that our paper [Designing Rewards for Fast Learning](https://arxiv.org/abs/2205.15400?context=cs.AI) is selected for oral presentation at RLDM2022! Check out the [recording](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7adfa2ab-3dde-46ab-b69e-aea800efe5ef) at 1:20:22.
