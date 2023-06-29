@@ -8,7 +8,7 @@ I am fortunate to be advised by professors [George Konidaris](https://cs.brown.e
 {: style="text-align: center;font-size:110%;padding-top:40px"}
 
 [CV](/pdfs/bio/CV.pdf) \|
-[Google Scholar](https://scholar.google.com/citations?user=U70VE-YAAAAJ&hl=en) \|
+[Google Scholar](https://scholar.google.com/citations?user=unQVOJkAAAAJ&hl=en) \|
 [Github](https://github.com/zhouzypaul)
 {: style="text-align: center;font-size: 100%"}
 
@@ -43,7 +43,7 @@ I am fortunate to be advised by professors [George Konidaris](https://cs.brown.e
               <a href="https://www.linkedin.com/in/henry-sowerby-a54aa592/">Henry Sowerby</a>,
               <a href="https://www.littmania.com">Michael Littman</a>
               <br>
-				<em>In submission to AAAI</em>, 2023.
+				<em>ICML workshop</em>, 2023.
               <br>
               [<a href="https://arxiv.org/abs/2212.03733">arXiv</a>]
               [<a href="https://github.com/zhouzypaul/tiered-reward">code</a>]
