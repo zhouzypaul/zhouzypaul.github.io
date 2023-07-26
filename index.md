@@ -19,7 +19,8 @@ Outside of this, I like to jam on my guitar, play badminton, and watch standups 
 I love connecting with people. If you'd like to get in contact with me, please reach out at [zhiyuan_zhou@berkeley.edu](mailto:zhiyuan_zhou@berkeley.edu).
 
 ## Recent News
-last updated: April 6th, 2023
+last updated: July 2023
+- I've compiled [some resources](/grad_school_apps/) that helped me during my CS Ph.D. application, along with some of my own thoughts. Hopefully this will be helpful to some others out there!
 - I'm excited to start my Ph.D. at [Berkeley AI Research](https://bair.berkeley.edu) in the fall!
 - New preprint out: [Specifying Behavior Preference with Tiered Reward Functions](https://arxiv.org/abs/2212.03733)
 - I gave a 30min talk at [Brown Robotics Lab](http://robotics.cs.brown.edu) on Pareto Optimal Reward Funcitons. (July 29th)

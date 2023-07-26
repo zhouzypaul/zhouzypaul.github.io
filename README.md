@@ -27,6 +27,7 @@ You may fork or clone this repo and use it as you wish, though I provide no warr
 ### Local dev
 ```bash
 bundle exec jekyll serve --livereload
+JEKYLL_ENV=production bundle exec jekyll serve --livereload  # force production env to test the disqus comment functions
 ```
 
 ### Resources Links
