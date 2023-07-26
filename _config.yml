@@ -110,9 +110,9 @@ author:
   location         : "Providence, RI"
   email            :
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:zhouzy@brown.edu"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: "mailto:"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://zhouzypaul.github.io"

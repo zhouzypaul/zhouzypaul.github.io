@@ -23,6 +23,7 @@ You may fork or clone this repo and use it as you wish, though I provide no warr
 - `assets/css/styles.css`: where I put my custom CSS.
 - `docs`, `images`, `pdfs`: my data directories. 
 - `_includes/footer.html`: modify the website footer info.
+- `_site`: the auto-generated html files (from the md files in `_pages`)
 
 ### Local dev
 ```bash

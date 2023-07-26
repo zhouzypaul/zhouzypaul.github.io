@@ -16,7 +16,7 @@ I recently graduated from Brown University with an Sc.B. in Computer Science and
 
 Outside of this, I like to jam on my guitar, play badminton, and watch standups and movies. If this one-sentence description doesn't satify your curiosity, check out [this](/personal/) page.
 
-I love connecting with people. If you'd like to get in contact with me, please reach out at [zhiyuan_zhou@berkeley.edu](mailto:zhiyuan_zhou@berkeley.edu).
+I love connecting with people. If you'd like to get in contact with me, please reach out at [zhiyuan_zhou at berkeley dot edu].
 
 ## Recent News
 last updated: July 2023
