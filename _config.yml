@@ -20,7 +20,7 @@ title                    : 'Zhiyuan "Paul" Zhou'
 title_separator          : "-"
 subtitle                 :  # Portfolio website # site tagline that appears below site title in masthead
 name                     : 'Zhiyuan "Paul" Zhou'
-description              : "I am a senior studying Applied Math and CS at Brown University, and doing AI Research in Reinforcement Learning with George Konidaris and Michael Littman."
+description              : "I am an in-coming Ph.D. student at UC Berkeley interested in reinforcement learning. I recently graduated from Brown University with an Sc.B. in Applied Math and CS."
 url                      : 'https://zhouzypaul.github.io' # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : '/' # the subpath of your site, e.g. "/blog"
 repository               : 'zhouzypaul/zhouzypaul.github.io' # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : 'Zhiyuan "Paul" Zhou'
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a senior at Brown studying Applied Math and CS. I do research in Reinforcement Learning."
+  bio              : "I am an in-coming Ph.D. student at UC Berkeley interested in reinforcement learning. I recently graduated from Brown University with an Sc.B. in Applied Math and CS."
   location         : "Providence, RI"
   email            :
   links:

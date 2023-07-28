@@ -4,7 +4,7 @@ layout: splash
 permalink: /research/
 ---
 My research ambition is to build **autonomous agents** that can solve a wide variety of complex tasks and continuously learn new ones. I believe this calls for decision-making systems that can **continually** learn state and action abstractions and use them to quickly **generalize** to new tasks. Toward this goal, I work on various aspects of **reinforcement learning**.
-I am fortunate to be advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael Littman](https://www.littmania.com) under Brown's [BigAI initiative](http://bigai.cs.brown.edu). Please check out my selected work below. 
+I was fortunate to be advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael Littman](https://www.littmania.com) at Brown. Please check out my selected work below. 
 {: style="text-align: center;font-size:110%;padding-top:40px"}
 
 [CV](/pdfs/bio/CV.pdf) \|
