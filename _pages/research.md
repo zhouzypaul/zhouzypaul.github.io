@@ -43,7 +43,7 @@ I was fortunate to be advised by professors [George Konidaris](https://cs.brown.
               <a href="https://www.linkedin.com/in/henry-sowerby-a54aa592/">Henry Sowerby</a>,
               <a href="https://www.littmania.com">Michael Littman</a>
               <br>
-				<em>ICML workshop</em>, 2023.
+				<em>ICML workshop (<a href="https://sites.google.com/view/mfpl-icml-2023/home?authuser=0">MFPL</a>)</em>, 2023.
               <br>
               [<a href="https://arxiv.org/abs/2212.03733">arXiv</a>]
               [<a href="https://github.com/zhouzypaul/tiered-reward">code</a>]
@@ -125,6 +125,40 @@ I was fortunate to be advised by professors [George Konidaris](https://cs.brown.
 </table> 
 
 ### School Journal
+
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <!-- <tr bgcolor="#ffffd0"> -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div>
+                <img src='https://raw.githubusercontent.com/openai/procgen/master/screenshots/coinrun.png' width="160">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
+              Policy Transfer in Lifelong Reinforcement Learning through Learning Generalizing Features
+              </p>
+              <div class="skills">
+                <span class="skill">lifelong RL</span>
+                <span class="skill">transfer learning</span>
+                <span class="skill">attention</span>
+              </div>
+              <strong>Zhiyuan Zhou</strong> (Advisor:  <a href="https://cs.brown.edu/people/gdk/">George Konidaris</a>)
+              <br>
+				<em>Undergraduate Honors Thesis, Brown CS</em>, 2023.
+              <br>
+              [<a href="https://cs.brown.edu/media/filer_public/c2/72/c272a1f8-1186-4a85-8f97-cfe8a1a7278a/zhouzhiyuan_honors_thesis.pdf">pdf</a>]
+              [<a href="https://github.com/zhouzypaul/policy-transfer-lifelong-rl">code</a>]
+              <br>
+              <p>
+              Introduces an approach to learn state features that generalize across tasks drawn from the same distribution. We use an attantion mechanism to learn an ensemble of minimally overlapping state features, leading to an ensemble of policies. We then use a bandit algorithm to learn to identify the generalizing feature in the ensemble and capitalize on that to learn a transferable policy. <br>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+</table> 
+
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
           <!-- <tr bgcolor="#ffffd0"> -->
@@ -154,43 +188,6 @@ I was fortunate to be advised by professors [George Konidaris](https://cs.brown.
               [<a href="https://github.com/zhouzypaul/object-recognition-imu">code</a>]
               <br>
               <p> How to improve the accuracy of object recognition in videos if given per-frame inertial measurements of the camera. We propose two way to do so.<br>
-              </p>
-            </td>
-          </tr>
-        </tbody>
-</table> 
-
-
-## Misc 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-          <!-- <tr bgcolor="#ffffd0"> -->
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div>
-                <img src='/images/paper-images/robot-nav.png' width="160">
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
-              Natural Language and Gesture Control for Robot Navigation
-              </p>
-              <div class="skills">
-                <span class="skill">NLP</span>
-                <span class="skill">gesture control</span>
-                <span class="skill">navigation</span>
-                <span class="skill">robotics simulation</span>
-              </div>
-              <a href="https://www.linkedin.com/in/ronald-baker-a978801b4/">Ronald Baker</a>,
-              <strong>Zhiyuan Zhou</strong>,
-              <a href="https://cs.brown.edu/people/stellex/">Stefanie Tellex</a>,
-              <br>
-				<em>final paper for Brown's Collaborative Robotics CS2951K</em>, Spring 2020.
-              <br>
-              [<a href="../pdfs/papers/nl-gesture-paper.pdf">paper</a>]
-              [<a href="https://drive.google.com/file/d/1n_2syscPwRcwtKXXp40UMu6Vl1x3uDok/view?usp=sharing">demo video</a>]
-              <br>
-              <p>Created a pipeline that instructs a robot to navigate to a destination more accurately, using pointing gestures to corroborate natural language commands.<br>
               </p>
             </td>
           </tr>

@@ -19,15 +19,11 @@ Inspired by [this](https://cs.brown.edu/~mlittman/etc/slogans.txt), I am sharing
 
 > For all that has been, thank you! For all that is to come, yes! --- Dag Hammarskjold
 
-> Life is short, do what you must do. --- Pulkit Agrawal 
-
 > The whole of science is nothing more than the refinement of everyday thinking. --- Albert Einstein
 
 > Stay hungry, stay foolish. --- Steve Jobs
 
 > The wisest mind has something yet to learn. --- George Santanaya 
-
-> If you’re going through hell, keep going. --- Winston Churchill
 
 > Impossible is for the unwilling. --- John Keats 
 
@@ -35,7 +31,6 @@ Inspired by [this](https://cs.brown.edu/~mlittman/etc/slogans.txt), I am sharing
 
 > The mark of the immature man is that he wants to die nobly for a cause, while the mark of the mature man is that he wants to live humbly for one. --- J.D. Salinger 
 
-> Boldness be my friend. --- William Shakespeare 
 
 #### Music
 Maybe some day I will eventually have time to record a good guitar clip and put it on here... In the mean time I will just point to two ML/DL (that's right) music videos made at Brown that I think are absolute gems: [this](https://www.youtube.com/watch?v=DQWI1kvmwRg) and [this](https://www.youtube.com/watch?v=ZwVa4MtPstw).

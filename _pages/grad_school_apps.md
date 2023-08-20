@@ -52,7 +52,7 @@ The numerous resources already have great advice on how to write a good SoP, so 
 - I've found [Nishanth Kumar's example SoP](https://nishanthjkumar.com/My-PhD-Statement-of-Purpose/) and advice (tldr: make SoP research-dense and skimmable) to be very helpful when writing my own.
 - Your main goal is to articulate what research you want to do and have done and convince your readers (professors) that you are passionate about it. So keep these things in mind when writing: What drives you? What is the big theme you want to work on in grad school? How does it relate to the projects you did during undergrad?
 - Each paragraph should be action dense: what is the goal of the project, why are you interested, what’s your contribution, and what’s the outcome (doesn’t have to be a paper).
-- For the advisor-specific paragraph, point out your interest in one or two big themes in their lab (to show your understanding of their interests) and relate that to a specific work (to show you have done your research).
+- For each professor you want to work with, point out your interest in one or two big themes in their lab (to show your understanding of how your interests intersect) and relate that to a specific work (to show you have read their papers; and do actually read them!).
 - Make it easy to read fast: bold important keywords.
 - Don’t worry too much about the choice of essay style (e.g. whether to have subheadings). Everyone have different preferences, and to be honest they don't matter that much. Focus on the content.
 
@@ -65,7 +65,7 @@ The following resources contain some good questions to ask grad students on visi
 4. [The Definitive ‘what do I ask/look for’ in a PhD Advisor Guide](https://www.cs.columbia.edu/wp-content/uploads/2019/03/Get-Advisor.pdf)
 6. [How to Choose Your Grad School, by Tim Dettmers](https://timdettmers.com/2022/03/13/how-to-choose-your-grad-school/)
 
-Also, if you believe in rankings, there is [a system](https://drafty.cs.brown.edu/csopenrankings/) that combine several major rankings for CS schools.
+Also, if you believe in rankings, there is [a system](https://drafty.cs.brown.edu/csopenrankings/) that combines several major rankings for CS schools.
 
 
 
