@@ -12,7 +12,7 @@ Hi there! Welcome to my home page.
 
 I'm Zhiyuan; my friends call me Paul.
 
-I am currently a first-year EECS Ph.D. student at [UC Berkeley](https://www.berkeley.edu) interested in reinforcement learning.
+I am currently a CS Ph.D. student at [UC Berkeley](https://www.berkeley.edu), advised by professor [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/). I am interested in reinforcement learning and building autonomous intelligent agents.
 I recently graduated magna cum laude from [Brown University](https://www.brown.edu) with an Sc.B. in Applied Math and Computer Science, and I was fortunate to be advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael Littman](https://www.littmania.com) at Brown. Check out my [research page](/research/) for more information.
 
 Outside of this, I like to jam on my guitar, play badminton, and watch standups and movies.
