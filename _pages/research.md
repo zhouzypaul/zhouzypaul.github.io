@@ -19,6 +19,54 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
 
 
 ## Publications
+
+### Preprints
+
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <!-- <tr bgcolor="#ffffd0"> -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div>
+                <!-- <img src='/images/paper-images/soar.pdf' width="260"> -->
+                <!-- <blockquote class="twitter-tweet" data-media-max-width="260"><p lang="en" dir="ltr">Can robots self-improve by collecting data autonomously🤖?<br><br>Introducing SOAR: a system for large-scale autonomous data collection 🚀 and autonomous improvement📈of a multi-task language-conditioned policy in diverse scenes without human interventions .<a href="https://t.co/tepGrLQYdw">https://t.co/tepGrLQYdw</a> <a href="https://t.co/LBddvbib92">pic.twitter.com/LBddvbib92</a></p>&mdash; Paul Zhou (@zhiyuan_zhou_) <a href="https://twitter.com/zhiyuan_zhou_/status/1818338141788684706?ref_src=twsrc%5Etfw">July 30, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+                <video width="260" height="210" controls autoplay>
+                  <source src="https://auto-improvement.github.io/static/videos/teaser_video.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
+              Autonomous Improvement of Instruction Following Skills via Foundation Models
+              </p>
+              <div class="skills">
+                <span class="skill">robotics</span>
+                <span class="skill">autonomous improvement</span>
+                <span class="skill">language-conditioned skills</span>
+                <span class="skill">VLM</span>
+              </div>
+              <strong>Zhiyuan Zhou*</strong>,
+              <a href="https://pranavatreya.github.io">Pranav Atreya*</a>,
+              <a href="https://www.linkedin.com/in/abraham-lee-4a0497242?original_referer=https%3A%2F%2Fwww.google.com%2F">Abraham Lee</a>,
+              <a href="https://homerwalke.com/">Homer Walke</a>,
+              <a href="https://www.oiermees.com/">Oier Mees</a>,
+              <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>,
+              <br>
+              <br>
+              [<a href="https://auto-improvement.github.io">website</a>]
+              [<a href="hhttps://arxiv.org/abs/2407.20635">arXiv</a>]
+              [<a href="https://github.com/rail-berkeley/soar">code</a>]
+              [<a href="https://rail.eecs.berkeley.edu/datasets/soar_release/">dataset</a>]
+              <br>
+              <p>
+              Can robots self-improve by collecting data autonomously🤖? We introduce SOAR, a system for large-scale autonomous data collection 🚀 and autonomous improvement📈of a multi-task language-conditioned policy in diverse scenes without human interventions .<br>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+</table> 
+
 ### Conferences 
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -32,7 +80,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
-              Specifying Behavior Preference with Tiered Reward Functions
+              Tiered Reward: Designing Rewards for Specification and Fast Learning of Desired Behavior
               </p>
               <div class="skills">
                 <span class="skill">behavior specification</span>
@@ -41,15 +89,17 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
                 <span class="skill">fast learning</span>
               </div>
               <strong>Zhiyuan Zhou</strong>,
+              <a href="https://www.linkedin.com/in/shreyas-raman-167a2a142/">Shreyas Sundara Raman</a>,
               <a href="https://www.linkedin.com/in/henry-sowerby-a54aa592/">Henry Sowerby</a>,
               <a href="https://www.littmania.com">Michael Littman</a>
               <br>
-				<em>ICML workshop (<a href="https://sites.google.com/view/mfpl-icml-2023/home?authuser=0">MFPL</a>)</em>, 2023.
+				<em>Reinforcement Learning Conference (RLC)</em>, 2024.
               <br>
               [<a href="https://arxiv.org/abs/2212.03733">arXiv</a>]
               [<a href="https://github.com/zhouzypaul/tiered-reward">code</a>]
               <br>
-              <p>Proposes a strict partial ordering of the policy space to tradeoff policy-preference, then introduces a family of environment-independent tiered reward functions that are guaranteed to induce preferred policy. Finally, we show tiered rewards induce fast learning.<br>
+              <p>
+              Do you need a reward function for your goal-reaching task? Use Tiered Reward! We prove that Tiered Reward guarantees to lead to an optimal policy, and show that it can lead to fast learning in various deep and tabular environments.<br>
               </p>
             </td>
           </tr>
@@ -70,8 +120,8 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               Characterizing the Action-Generalization Gap in Deep Q-Learning
               </p>
               <div class="skills">
-                <span class="skill">DQN</span>
                 <span class="skill">action generalization</span>
+                <span class="skill">DQN</span>
               </div>
               <strong>Zhiyuan Zhou</strong>,
               <a href="https://camallen.net">Cameron Allen</a>,
@@ -84,7 +134,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               [<a href="../pdfs/posters/actgen_rldm_poster.pdf">poster</a>]
               [<a href="https://github.com/camall3n/actgen">code</a>]
               <br>
-              <p>Introduces a way of evaluating action-generalization in Deep Q-Learning using an oracle (expert knowledge of action similarity), and shows that DQN's ability to generalize over actions depends on the size of the action space. <br>
+              <p>We introduce a way to evaluate action-generalization in Deep Q-Learning using an oracle (expert knowledge of action similarity), and shows that DQN's ability to generalize over actions depends on the size of the action space. <br>
               </p>
             </td>
           </tr>
@@ -118,7 +168,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               [<a href="../pdfs/posters/optre_rldm_poster.pdf">poster</a>]
               [<a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7adfa2ab-3dde-46ab-b69e-aea800efe5ef">oral at RLDM</a> at 1:20:00]
               <br>
-              <p>Identifies properties of rewards that lead to fast learning: rewards should have big action gaps and small "subjective discounts". Proposes an algorithm to design these rewards.<br>
+              <p>What kind of reward functions make RL fast? We advocate for rewards with big action gaps and small "subjective discounts". We present an algorithm to design these rewards.<br>
               </p>
             </td>
           </tr>

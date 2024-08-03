@@ -20,7 +20,7 @@ title                    : 'Zhiyuan "Paul" Zhou'
 title_separator          : "-"
 subtitle                 :  # Portfolio website # site tagline that appears below site title in masthead
 name                     : 'Zhiyuan "Paul" Zhou'
-description              : "I am an in-coming Ph.D. student at UC Berkeley interested in reinforcement learning. I recently graduated from Brown University with an Sc.B. in Applied Math and CS."
+description              : "Zhiyuan Paul Zhou is a CS Ph.D. student at UC Berkeley interested in reinforcement learning and building autonomous intelligent agents."
 url                      : 'https://zhouzypaul.github.io' # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : '/' # the subpath of your site, e.g. "/blog"
 repository               : 'zhouzypaul/zhouzypaul.github.io' # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : 'Zhiyuan "Paul" Zhou'
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an in-coming Ph.D. student at UC Berkeley interested in reinforcement learning. I recently graduated from Brown University with an Sc.B. in Applied Math and CS."
+  bio              : "I am a CS Ph.D. student at UC Berkeley, interested in reinforcement learning and building autonomous intelligent agents."
   location         : "Providence, RI"
   email            :
   links:
@@ -132,9 +132,9 @@ author:
 # Site Footer
 footer:
   links:
-    # - label: "Twitter"
-    #   icon: "fab fa-fw fa-twitter-square"
-    #   # url:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: https://twitter.com/zhiyuan_zhou_
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
       url: https://www.linkedin.com/in/zhiyuan-paul-zhou/
@@ -147,12 +147,6 @@ footer:
     # - label: "Bitbucket"
     #   icon: "fab fa-fw fa-bitbucket"
     #   # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: https://www.instagram.com/paul_zhou_/
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      url: https://www.facebook.com/paul.zhou.528
 
 
 # Reading Files
