@@ -95,8 +95,10 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <br>
 				<em>Reinforcement Learning Conference (RLC)</em>, 2024.
               <br>
-              [<a href="https://arxiv.org/abs/2212.03733">arXiv</a>]
+              [<a href="https://rlj.cs.umass.edu/2024/papers/Paper159.html">paper</a>]
+              [<a href="/tiered_reward/">website</a>]
               [<a href="https://github.com/zhouzypaul/tiered-reward">code</a>]
+              [<a href="https://x.com/zhiyuan_zhou_/status/1821261534456402001">thread</a>]
               <br>
               <p>
               Do you need a reward function for your goal-reaching task? Use Tiered Reward! We prove that Tiered Reward guarantees to lead to an optimal policy, and show that it can lead to fast learning in various deep and tabular environments.<br>
