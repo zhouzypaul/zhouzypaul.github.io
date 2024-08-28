@@ -24,6 +24,6 @@ last updated: Aug 2024
 - I am thrilled to announce the first big project I led in my Ph.D! Check out [SOAR: Autonomous Improvement of Instruction Following Skills via Foundation Models](https://auto-improvement.github.io)
 - I am going to present my undergrad work [Tiered Reward: Designing Rewards for Specification and Fast Learning of Desired Behavior](/tiered_reward/) at the [RL Conference](https://rl-conference.cc). Come chat with me!
 - Check out my undergrad thesis [Policy Transfer in Lifelong Reinforcement Learning through Learning Generalizing Features](https://cs.brown.edu/media/filer_public/c2/72/c272a1f8-1186-4a85-8f97-cfe8a1a7278a/zhouzhiyuan_honors_thesis.pdf).
-I've compiled [some resources](/grad_school_apps/) that helped me during my CS Ph.D. application, along with some of my own thoughts. Hopefully this will be helpful to some others out there!
+- I've compiled [some resources](/grad_school_apps/) that helped me during my CS Ph.D. application, along with some of my own thoughts. Hopefully this will be helpful to some others out there!
 - I'm honored that our paper [Designing Rewards for Fast Learning](https://arxiv.org/abs/2205.15400?context=cs.AI) is selected for oral presentation at RLDM2022! Check out the [recording](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7adfa2ab-3dde-46ab-b69e-aea800efe5ef) at 1:20:22.
 - Our work [Characterizing the Action-Generalization Gap in Deep Q-Learning](https://arxiv.org/abs/2205.05588) is accepted into RLDM2022!
