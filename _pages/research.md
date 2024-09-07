@@ -20,7 +20,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
 
 ## Publications
 
-### Preprints
+### Conferences 
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
@@ -53,6 +53,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <a href="https://www.oiermees.com/">Oier Mees</a>,
               <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>,
               <br>
+              <em>CoRL</em>, 2024.
               <br>
               [<a href="https://auto-improvement.github.io">website</a>]
               [<a href="hhttps://arxiv.org/abs/2407.20635">arXiv</a>]
@@ -66,8 +67,6 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
           </tr>
         </tbody>
 </table> 
-
-### Conferences 
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
