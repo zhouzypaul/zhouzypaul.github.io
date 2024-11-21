@@ -3,9 +3,9 @@ title: "Research"
 layout: splash
 permalink: /research/
 ---
-My research ambition is to build **autonomous agents** that can solve a wide variety of complex tasks and continuously learn new ones. I believe this calls for decision-making systems that can **continually** learn state and action abstractions and use them to quickly **generalize** to new tasks. Toward this goal, I work on various aspects of **reinforcement learning**.
+My research ambition is to build **autonomous agents** that can solve a wide variety of complex tasks and continuously learn new ones. I believe this calls for decision-making systems that can effectively build on **prior knowledge** (e.g. large-scale pre-training) and **continually** learn to generalize to new tasks. Towards this goal, I work on various aspects of **robotics** and **reinforcement learning**. Currently, I am most excited about autonomous improvement of robotic skills and offline-to-online RL.
 I am fortunate to be advised by professor [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/) at UC Berkeley. 
-During my undergrad I was advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael Littman](https://www.littmania.com) at Brown. Please check out my selected work below. 
+During my undergrad I was advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael Littman](https://www.littmania.com) at Brown. Please check out my selected work below.
 {: style="text-align: center;font-size:110%;padding-top:40px"}
 
 [CV](/pdfs/bio/CV.pdf) \|
@@ -53,7 +53,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <a href="https://www.oiermees.com/">Oier Mees</a>,
               <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>,
               <br>
-              <em>CoRL</em>, 2024.
+              <em>Conference on Robot Learning (CoRL)</em>, 2024.
               <br>
               [<a href="https://auto-improvement.github.io">website</a>]
               [<a href="hhttps://arxiv.org/abs/2407.20635">arXiv</a>]
