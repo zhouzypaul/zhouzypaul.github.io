@@ -21,6 +21,7 @@ permalink: /wsrl/
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
   <!-- <link rel="stylesheet" href="./static/css/index.css"> -->
   <link rel="icon" href="https://example.com/path/to/favicon.ico">
 </head>
@@ -61,6 +62,292 @@ permalink: /wsrl/
           </div>
 
 
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2407.20635"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/abs/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/rail-berkeley/soar"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/rail-berkeley/soar?tab=readme-ov-file#using-soar-data"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="
+                      far fa-images"></i>
+                  </span>
+                  <span>Dataset</span>
+                  </a> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="video-background">
+  <div class="container is-max-desktop has-text-centered">
+    <div class="hero-body">
+      <video id="teaser" autoplay controls muted loop playsinline width="90%">
+        <source src="static/videos/teaser_video.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section> -->
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" src="../images/paper-images/wsrl_teaser.pdf" alt="System Diagram" width="100%">
+      <h2 class="subtitle has-text-centered">
+        No data retention fine-tuning focuses on RL fine-tuning without using the offline dataset during online updates, mirroring the common paradigm in machine learning at scale today. The offline dataset is only used to pre-train a policy and Q-function via offline RL to initialize fine-tuning, after which the dataset is discarded and the agent only fine-tunes with online experience. Current methods struggle in this no-retention setting and forget knowledge learned from pre-training. Our goal is to develop a fine-tuning method that quickly adapts online even if we do not retain offline data.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop has-text-centered">
+    <div class="custom-box">
+      <h2 class="title is-2">TL;DR</h2>
+      <div class="columns">
+        <div class="column">
+          <div class="content has-text-justified">
+            <p class="is-size-5">
+              In this paper, we explore the possibility of fine-tuning RL agents online without retaining and co-training on any offline datasets. Such setting is important for truly scalable RL, where offline RL is used to pre-train on a diverse dataset, followed by online RL fine-tuning where keeping the offline data is expensive or impossible. We find that previous offline-to-online RL algorithms fail completely in this setting because of Q-value divergence due to distribution shift. However, if we simply use online RL algorithm for fine-tuning and allow the Q-values to stabilize through a warmup phase, we can prevent the Q-divergence. We hope that WSRL sheds light on the challenges in no-retention fine-tuning, and inspire future research on the important paradigm of no-retention RL fine-tuning. 
+
+            </p>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop ">
+    <h2 class="title is-3">Motivation</h2>
+    <div class="columns">
+      <div class="column">
+        <div class="content has-text-justified">
+          <p>
+            Is it possible to fine-tune from offline RL value and policy initializations, but without retaining offline data and not forget the pre-training?
+          </p>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop ">
+    <h2 class="title is-3">What are the challenges?</h2>
+    <div class="columns">
+      <div class="column">
+
+        <div class="custom-box" style="padding-bottom: 20px; margin-bottom: 20px;">
+          <div class="content has-text-justified">
+            <h3> 
+              Distribution shift between offline and online data destroys Q-function fit
+            </h3>
+            <p>
+              Training only on online experience during fine-tuning without offline data retention can destroy how well the model fits offline data: despite attaining comparable TD-errors on the online data to the setting when offline data is retained, TD-errors under the offline distribution grow larger
+            </p>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto; margin-bottom: 40px;">
+          <img src="../images/paper-images/calql_different_mixing.png" style="width: 25%;" alt="Mixing Image">
+          <img src="../images/paper-images/calql_different_mixing_q_blowup.png" style="width: 25%;" alt="Q values Blowup">
+          <img src="../images/paper-images/calql_different_mixing_loss_blowup.png" style="width: 25%;" alt="TD Error Blowup">
+          <img src="../images/paper-images/calql_different_mixing_loss_online.png" style="width: 25%;" alt="TD Loss Online">
+        </div>
+        
+
+        <div class="content has-text-justified">
+          <div class="custom-box" style="padding-bottom: 20px; margin-bottom: 20px;">
+            <h3> 
+              Re-calibration of Q-values leads to excessive underestimation
+            </h3>
+            <p>
+              The distribution shift between offline dataset data and online rollout data distributions causes a divergence of Q values at the onset of finetuning. We find that Q-value recalibration at the beginning of fine-tuning leads to excessive underestimation due to backups with over-pessimistic TD-targets. We call this the Downward Spiral, and is shown across 3 kitchen envs with 3 offline RL methods
+            </p>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto; margin-bottom: 40px;">
+          <img src="../images/paper-images/downwards_spiral_cql.png" style="width: 33%;" alt="Downward Spiral CQL">
+          <img src="../images/paper-images/downward-spiral-calql.png" style="width: 33%;" alt="Downward Spiral CalQL">
+          <img src="../images/paper-images/downward-spiral-iql.png" style="width: 33%;" alt="Downward Spiral IQL">
+        </div>
+
+        <div class="content has-text-justified">
+          <div class="custom-box" style="padding-bottom: 20px; margin-bottom: 20px;">
+            <h3> 
+              Retaining offline data hurts asymptotic performance
+            </h3>
+            <p>
+              While retaining offline data appears to be crucial for preventing forgetting at the beginning of fine-tuning for current fine-tuning methods, continuing to make updates on this offline data with an (pesimistic) offline RL algorithm negatively impacts asymptotic performance and efficiency
+            </p>
+          </div>
+          <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto; margin-bottom: 40px;">
+            <img id="teaser" src="../images/paper-images/calql_rlpd_compare.png" alt="System Diagram" width="100%">
+          </div>
+
+
+    </div>
+</section>
+
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+      <video id="teaser" autoplay muted playsinline height="100%">
+        <source src="./static/videos/animated_diagram.mp4"
+                type="video/mp4">
+      </video>
+  </div>
+</section> -->
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+   <img id="teaser" src="./static/images/system_diagram.png" alt="System Diagram" width="100%">
+  </div>
+ </section> -->
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+   <h2 class="title is-3">Decomposed Instruction Following Policy</h2>
+   <img id="teaser" src="./static/images/susie_rollout.png" alt="Decomposed Instruction Following Policy" height="100%">
+  </div>
+ </section> -->
+
+ <!-- <section class="video-background">
+  <div class="container is-max-desktop has-text-centered">
+    <video id="teaser" autoplay muted loop playsinline width="90%">
+      <source src="static/videos/decomposed_lc_policy.mp4" type="video/mp4">
+    </video>
+  </div>
+</section> -->
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Method Overview</h2>
+    <div class="hero-body-border">
+      <video id="decomposed_lc_policy" autoplay muted loop playsinline height="80%">
+        <source src="./static/videos/soar_lc_policy.mp4"
+                type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <div class="container is-max-desktop">
+    <div class="columns">
+      <div class="column">
+        <div class="content has-text-justified">
+          <p>
+            Our approach, WSRL (Warm Start Reinforcement Learning) “simulates” continued training on
+            offline data by collecting a small number of warmup transitions with a frozen offline RL policy at the onset
+            of online fine-tuning. Training on these transitions via an aggressive, high updates-to-data (UTD) online
+            RL approach, without retaining offline data can mitigate the challenges of catastrophic forgetting. WSRL instantiates these insights into an extremely simple
+            and practical method that enables us to obtain strong fine-tuning results without offline data.
+          </p>
+          <p>
+            WSRL is an off-policy actor-critic algorithm (Algorithm 1). It initializes the value function
+            and policy with the pre-trained Q-function 𝑄pre
+            𝜃 and policy 𝜋pre
+            𝜓 could come from any offline RL algorithm.
+            Then, WSRL uses the first 𝐾 online steps to collect a few rollouts using the frozen offline RL policy to
+            simulate the retention of offline data. We refer to this phase as the “warmup” phase. After warmup data
+            collection, WSRL trains both the value and policy using standard temporal-difference (TD) updates and
+            policy gradient. For fine-tuning, we fine-tune with a high updates-to-data (UTD) ratio and follow
+            other best practices. To combat issues such as overestimation in the high UTD regime, we use an
+            ensemble of Q functions and layer normalization in both the actor and the critic.
+          </p>
+        </div>
+      </div>
+    </div><br>
+  </section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Results</h2>
+    <p>
+      WSRL is able to recover from the initial performance dip during finetuning, and is able to finetune efficiently compared to various no-retention RL algorithms across various environments. 
+    </p>
+    <div style="display: flex; justify-content: center; gap: 1%; width: 100%; margin: 0;">
+      <img id="teaser" src="../images/paper-images/nrf_finetune_results.png" alt="Nrf comparison" width="100%">
+    </div>
+  </div>
+</section>
+
+<section class="hero" id="BibTeX">
+  <div class="container is-max-desktop">
+    <h2 class="title">BibTeX</h2>
+    <pre>
+      <code>@article{zhou2024autonomous,
+        title={Autonomous Improvement of Instruction Following Skills via Foundation Models},
+        author={Zhiyuan Zhou and Pranav Atreya and Abraham Lee and Homer Walke and Oier Mees and Sergey Levine},
+        journal = {arXiv preprint arXiv:407.20635},
+        year={2024},
+        }
+      </code>
+    </pre>
+  </div>
+  </section>
+<br><br>
+
+<footer class="footer">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>
+            under a 
+            <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
