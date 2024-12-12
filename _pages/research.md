@@ -20,6 +20,46 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
 
 ## Publications
 
+### Preprints
+
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <!-- <tr bgcolor="#ffffd0"> -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div>
+                <img src='/images/paper-images/wsrl.pdf' width="280">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
+              Efficient Online Reinforcement Learning Fine-Tuning Need Not Retain Offline Data
+              </p>
+              <div class="skills">
+                <span class="skill">deep reinforcement learning</span>
+                <span class="skill">fine-tuning</span>
+              </div>
+              <strong>Zhiyuan Zhou</strong>,
+              <a href="https://www.linkedin.com/in/andypeng05">Andy Peng</a>,
+              <a href="https://colinqiyangli.github.io">Qiyang Li</a>,
+              <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>,
+              <a href="https://aviralkumar2907.github.io">Aviral Kumar</a>,
+              <br>
+				<em>arXiv preprint</em>, 2024
+              <br>
+              [<a href="http://arxiv.org/abs/2412.07762">paper</a>]
+              [<a href="/wsrl/">website</a>]
+              [<a href="https://github.com/zhouzypaul/wsrl">code</a>]
+              <br>
+              <p>
+              Can we finetune policies and values from offline RL <b>*without retaining the offline data*</b>? Current methods require keeping the offline data
+              for stability and performance, but this make RL hard to scale up when the offline dataset gets bigger and bigger. Turns out a simple receipe, Warm-start RL, is able to finetune rapidly without data retention! <br>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+</table> 
+
 ### Conferences 
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -61,7 +101,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               [<a href="https://rail.eecs.berkeley.edu/datasets/soar_release/">dataset</a>]
               <br>
               <p>
-              Can robots self-improve by collecting data autonomously🤖? We introduce SOAR, a system for large-scale autonomous data collection 🚀 and autonomous improvement📈of a multi-task language-conditioned policy in diverse scenes without human interventions .<br>
+              Can robots <b>self-improve by collecting data autonomously</b>🤖? We introduce SOAR, a system for large-scale autonomous data collection 🚀 and autonomous improvement📈of a multi-task language-conditioned policy in diverse scenes without human interventions .<br>
               </p>
             </td>
           </tr>
@@ -100,7 +140,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               [<a href="https://x.com/zhiyuan_zhou_/status/1821261534456402001">thread</a>]
               <br>
               <p>
-              Do you need a reward function for your goal-reaching task? Use Tiered Reward! We prove that Tiered Reward guarantees to lead to an optimal policy, and show that it can lead to fast learning in various deep and tabular environments.<br>
+              Do you need a reward function for your goal-reaching task? Use Tiered Reward! We prove that Tiered Reward <b>guarantees to lead to an optimal policy</b>, and show that it can lead to <b>fast learning</b> in various deep and tabular environments.<br>
               </p>
             </td>
           </tr>
