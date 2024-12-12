@@ -151,8 +151,12 @@ permalink: /wsrl/
         <div class="column">
           <div class="content has-text-justified">
             <p class="is-size-5">
-              In this paper, we explore the possibility of fine-tuning RL agents online without retaining and co-training on any offline datasets. Such setting is important for truly scalable RL, where offline RL is used to pre-train on a diverse dataset, followed by online RL fine-tuning where keeping the offline data is expensive or impossible. We find that previous offline-to-online RL algorithms fail completely in this setting because of Q-value divergence due to distribution shift. However, if we simply use online RL algorithm for fine-tuning and allow the Q-values to stabilize through a warmup phase, we can prevent the Q-divergence. We hope that WSRL sheds light on the challenges in no-retention fine-tuning, and inspire future research on the important paradigm of no-retention RL fine-tuning. 
-
+              We investigate the role of offline data retention during online RL fine-tuning and the sudden divergence in value functions that arises due to the distribution mismatch 
+              between the offline dataset and online rollouts. This divergence typically results in unlearning and forgetting the benefits of offline pre-training. To address this problem, we introduce Warm-Start RL (WSRL), 
+              an Actor-Critic off-policy algorithm that performs efficient offline-to-online fine-tuning without retaining offline data.
+              By initializing the value function and policy with a pretrained Q-function and policy and using warmup steps to collect online rollouts with the frozen offline 
+              policy, WSRL is able to simulate the retention of offline data and mitigate the challenges of distribution shift and catestrophic forgetting that comes with 
+              offline-to-online RL finetuning.
             </p>
           </div>
         </div>
@@ -167,7 +171,15 @@ permalink: /wsrl/
       <div class="column">
         <div class="content has-text-justified">
           <p>
-            Is it possible to fine-tune from offline RL value and policy initializations, but without retaining offline data and not forget the pre-training?
+            The modern paradigm in machine learning involves pre-training on diverse data, followed by task-specific fine-tuning. In reinforcement learning (RL), 
+            this translates to learning via offline RL on a diverse historical dataset, followed by rapid online RL fine-tuning using interaction data. 
+            Such a setting is important for truly scalable RL.
+    
+          </p>
+          <p>
+            However, continued training on offline data for stability and performance can be slow, expensive, and limiting due to constraints or pessimism on the offline data. 
+            We find that previous offline-to-online RL algorithms fail completely in this setting because of Q-value divergence due to distribution shift. 
+            Is it possible to fine-tune from offline RL value and policy initializations, but without retaining offline data or forgetting the pre-training? 
           </p>
         </div>
       </div>
@@ -222,7 +234,9 @@ permalink: /wsrl/
               Retaining offline data hurts asymptotic performance
             </h3>
             <p>
-              While retaining offline data appears to be crucial for preventing forgetting at the beginning of fine-tuning for current fine-tuning methods, continuing to make updates on this offline data with an (pesimistic) offline RL algorithm negatively impacts asymptotic performance and efficiency
+              While retaining offline data appears to be crucial for preventing forgetting at the beginning of fine-tuning for current fine-tuning methods,
+               continuing to make updates on this offline data with an (pesimistic) offline RL algorithm negatively impacts asymptotic performance and efficiency.
+               RLPD starts from scratch, and is able to outperform CalQL with data retention.
             </p>
           </div>
           <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto; margin-bottom: 40px;">
@@ -280,27 +294,27 @@ permalink: /wsrl/
       <div class="column">
         <div class="content has-text-justified">
           <p>
-            Our approach, WSRL (Warm Start Reinforcement Learning) “simulates” continued training on
-            offline data by collecting a small number of warmup transitions with a frozen offline RL policy at the onset
-            of online fine-tuning. Training on these transitions via an aggressive, high updates-to-data (UTD) online
-            RL approach, without retaining offline data can mitigate the challenges of catastrophic forgetting. WSRL instantiates these insights into an extremely simple
-            and practical method that enables us to obtain strong fine-tuning results without offline data.
+            Our approach WSRL (Warm Start Reinforcement Learning) instantiates these insights into an extremely simple
+            and practical method that enables us to obtain strong fine-tuning results without offline data.  
           </p>
           <p>
-            WSRL is an off-policy actor-critic algorithm (Algorithm 1). It initializes the value function
-            and policy with the pre-trained Q-function 𝑄pre
-            𝜃 and policy 𝜋pre
-            𝜓 could come from any offline RL algorithm.
-            Then, WSRL uses the first 𝐾 online steps to collect a few rollouts using the frozen offline RL policy to
-            simulate the retention of offline data. We refer to this phase as the “warmup” phase. After warmup data
-            collection, WSRL trains both the value and policy using standard temporal-difference (TD) updates and
-            policy gradient. For fine-tuning, we fine-tune with a high updates-to-data (UTD) ratio and follow
-            other best practices. To combat issues such as overestimation in the high UTD regime, we use an
+            WSRL is an online, off-policy, actor-critic algorithm. It initializes the value function
+            and policy with the pre-trained Q-function 𝑄pre𝜃 and policy 𝜋pre
+            𝜓 which could come from any offline RL algorithm. It then “simulates” continued training on
+            offline data by collecting a small number of warmup transitions with the frozen offline RL policy at the onset
+            of online fine-tuning. This allows the Q-values to stabilize through a "warmup phase", and can prevent Q-divergence. 
+            WSRL then trains both the value and policy using standard temporal-difference (TD) updates and
+            policy gradient. 
+          </p>
+          <p>
+            For fine-tuning, we train on these transitions an high updates-to-data (UTD) ratio to mitigate the effects of catestrophic forgetting. 
+            To combat issues such as overestimation in the high UTD regime, we use an
             ensemble of Q functions and layer normalization in both the actor and the critic.
+            We hope that WSRL sheds light on the challenges in no-retention fine-tuning, and inspire future research on the important paradigm of no-retention RL fine-tuning. 
           </p>
         </div>
       </div>
-    </div><br>
+    </div>
   </section>
 
 <section class="section">
@@ -311,6 +325,12 @@ permalink: /wsrl/
     </p>
     <div style="display: flex; justify-content: center; gap: 1%; width: 100%; margin: 0;">
       <img id="teaser" src="../images/paper-images/nrf_finetune_results.png" alt="Nrf comparison" width="100%">
+    </div>
+    <p>
+      Even compared to methods that <b>retain offline data</b>, WSRL is able to outperform faster or competitively <b>without</b> retaining offline training data.
+    </p>
+    <div style="display: flex; justify-content: center; gap: 1%; width: 100%; margin: 0;">
+      <img id="teaser" src="../images/paper-images/baselines_compare.png" alt="Nrf comparison" width="100%">
     </div>
   </div>
 </section>
