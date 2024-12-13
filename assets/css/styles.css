@@ -131,9 +131,9 @@ nav#filter a {
 }
 
 .custom-box {
-    border: 1px solid rgba(55, 65, 81, 0.05);   /* Border color */
+    border: 1px solid rgba(243 244 246);   /* Border color */
     padding: 20px;                /* Padding inside the box */
-    background-color: rgba(55, 65, 81, 0.05);   /* Light grey background */
+    background-color: rgba(243 244 246);   /* Light grey background */
     border-radius: 10px;          /* Rounded corners */
     outline: none;                /* Remove outline */
     padding-bottom: 40px; 

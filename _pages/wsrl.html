@@ -7,10 +7,10 @@ permalink: /wsrl/
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Tiered Reward: Designing Rewards for Specification and Fast Learning of Desired Behavior">
+        content="WSRL: Efficient Online Reinforcement Learning Fine-Tuning Need Not Retain Offline Data">
   <meta name="keywords" content="Principaled Reward Design, Fast Learning, Reinfrocement Learning, Pareto Optimality">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tiered Reward</title>
+  <title>WSRL</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -30,7 +30,7 @@ permalink: /wsrl/
 <body>
 
 <section class="hero">
-  <div class="hero-body">
+  <div class="hero-body"  style="padding-bottom: 0;">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
@@ -45,13 +45,13 @@ permalink: /wsrl/
               <a href=""></a>Andy Peng<sup>1*</sup>,
             </span>
             <span class="author-block">
-              <a href=""></a>Qiyang Li<sup>1</sup>,
+              <a href="https://colinqiyangli.github.io">Qiyang Li</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="">Sergey Levine</a><sup>1</sup>
+              <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a><sup>1</sup>
             </span>
             <span class="author-block">
-              <a href="">Aviral Kumar</a><sup>2</sup>
+              <a href="https://aviralkumar2907.github.io">Aviral Kumar</a><sup>2</sup>
             </span>
           </div>
 
@@ -66,7 +66,7 @@ permalink: /wsrl/
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2407.20635"
+                <a href="https://arxiv.org/pdf/2412.07762"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -95,7 +95,7 @@ permalink: /wsrl/
               </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/rail-berkeley/soar"
+                <a href="https://github.com/zhouzypaul/wsrl"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -132,12 +132,11 @@ permalink: /wsrl/
   </div>
 </section> -->
 
-<section class="hero teaser">
+<section class="hero teaser" style="padding-top: 0;">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img id="teaser" src="../images/paper-images/wsrl_teaser.pdf" alt="System Diagram" width="100%">
+      <img id="teaser" src="../images/paper-images/wsrl/wsrl_teaser.pdf" alt="System Diagram" width="100%">
       <h2 class="subtitle has-text-centered">
-        No data retention fine-tuning focuses on RL fine-tuning without using the offline dataset during online updates, mirroring the common paradigm in machine learning at scale today. The offline dataset is only used to pre-train a policy and Q-function via offline RL to initialize fine-tuning, after which the dataset is discarded and the agent only fine-tunes with online experience. Current methods struggle in this no-retention setting and forget knowledge learned from pre-training. Our goal is to develop a fine-tuning method that quickly adapts online even if we do not retain offline data.
       </h2>
     </div>
   </div>
@@ -146,17 +145,17 @@ permalink: /wsrl/
 <section class="section">
   <div class="container is-max-desktop has-text-centered">
     <div class="custom-box">
-      <h2 class="title is-2">TL;DR</h2>
+      <h2 class="title is-2"> <mark>TL;DR</mark></h2>
       <div class="columns">
         <div class="column">
           <div class="content has-text-justified">
             <p class="is-size-5">
-              We investigate the role of offline data retention during online RL fine-tuning and the sudden divergence in value functions that arises due to the distribution mismatch 
-              between the offline dataset and online rollouts. This divergence typically results in unlearning and forgetting the benefits of offline pre-training. To address this problem, we introduce Warm-Start RL (WSRL), 
-              an Actor-Critic off-policy algorithm that performs efficient offline-to-online fine-tuning without retaining offline data.
+              We investigate the role of offline data retention during online RL fine-tuning and the sudden value-function divergence that arises due to the distribution mismatch 
+              between the offline dataset and online rollouts. This divergence typically results in <b>unlearning</b> and forgetting the benefits of offline pre-training. To address this problem, we introduce Warm-Start RL (<b>WSRL</b>), 
+              an offline-to-online RL algorithm that performs <b>efficient offline-to-online fine-tuning without retaining offline data</b>.
               By initializing the value function and policy with a pretrained Q-function and policy and using warmup steps to collect online rollouts with the frozen offline 
-              policy, WSRL is able to simulate the retention of offline data and mitigate the challenges of distribution shift and catestrophic forgetting that comes with 
-              offline-to-online RL finetuning.
+              policy, WSRL is able to simulate the retention of offline data and <b>mitigate the challenges of distribution shift and catestrophic forgetting that comes with 
+                offline-to-online RL finetuning.</b
             </p>
           </div>
         </div>
@@ -171,16 +170,22 @@ permalink: /wsrl/
       <div class="column">
         <div class="content has-text-justified">
           <p>
-            The modern paradigm in machine learning involves pre-training on diverse data, followed by task-specific fine-tuning. In reinforcement learning (RL), 
+            The modern paradigm in machine learning involves <b>pre-training</b> on diverse data, followed by task-specific <b>fine-tuning</b>. In reinforcement learning (RL), 
             this translates to learning via offline RL on a diverse historical dataset, followed by rapid online RL fine-tuning using interaction data. 
             Such a setting is important for truly scalable RL.
     
           </p>
           <p>
-            However, continued training on offline data for stability and performance can be slow, expensive, and limiting due to constraints or pessimism on the offline data. 
-            We find that previous offline-to-online RL algorithms fail completely in this setting because of Q-value divergence due to distribution shift. 
-            Is it possible to fine-tune from offline RL value and policy initializations, but without retaining offline data or forgetting the pre-training? 
+            We find that <b>without</b> retaining offline data, current offline-to-online RL algorithms fail in this no-retention setting because of Q-value divergence,
+            and forget knowledge learned from pre-training. 
+
+            Unsurprisingly, when continually training <b>with</b> offline data during fine-tuning, these algorithms work as intended. But continued training on offline data for stability
+             and performance can be slow, expensive, and limiting due to constraints or pessimism on the offline data. 
+            Is it possible to fine-tune from offline RL value and policy initializations, but <b>without retaining offline data</b> or forgetting the pre-training? 
           </p>
+          <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto;">
+            <img src="../images/paper-images/wsrl/challenges.png" alt="">
+          </div>
         </div>
       </div>
     </div>
@@ -188,44 +193,40 @@ permalink: /wsrl/
 
 <section class="section">
   <div class="container is-max-desktop ">
-    <h2 class="title is-3">What are the challenges?</h2>
+    <h2 class="title is-3">Challenges</h2>
     <div class="columns">
       <div class="column">
 
         <div class="custom-box" style="padding-bottom: 20px; margin-bottom: 20px;">
           <div class="content has-text-justified">
             <h3> 
-              Distribution shift between offline and online data destroys Q-function fit
+              Why do previous methods need to retain offline data?
             </h3>
             <p>
-              Training only on online experience during fine-tuning without offline data retention can destroy how well the model fits offline data: despite attaining comparable TD-errors on the online data to the setting when offline data is retained, TD-errors under the offline distribution grow larger
+              Training <b>only on online experience</b> during fine-tuning without offline data retention can <b>destroy</b> how well the model fits offline data: 
+              despite attaining comparable TD-errors on the online data to the setting when offline data is retained, 
+              TD-errors under the offline distribution grow larger.
+            </p>
+            <p>
+              The distribution shift between offline dataset data and online rollout data distributions causes a <b>divergence of Q-values</b> at the onset of finetuning.
+              We find that Q-value recalibration at the beginning of fine-tuning leads to excessive underestimation due to backups with over-pessimistic TD-targets 
+              and destroys Q-function fit.
+              We call this the <b>Downward Spiral</b>, and is shown across 3 kitchen envs with 3 offline RL methods
             </p>
           </div>
         </div>
 
         <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto; margin-bottom: 40px;">
-          <img src="../images/paper-images/calql_different_mixing.png" style="width: 25%;" alt="Mixing Image">
-          <img src="../images/paper-images/calql_different_mixing_q_blowup.png" style="width: 25%;" alt="Q values Blowup">
-          <img src="../images/paper-images/calql_different_mixing_loss_blowup.png" style="width: 25%;" alt="TD Error Blowup">
-          <img src="../images/paper-images/calql_different_mixing_loss_online.png" style="width: 25%;" alt="TD Loss Online">
-        </div>
-        
-
-        <div class="content has-text-justified">
-          <div class="custom-box" style="padding-bottom: 20px; margin-bottom: 20px;">
-            <h3> 
-              Re-calibration of Q-values leads to excessive underestimation
-            </h3>
-            <p>
-              The distribution shift between offline dataset data and online rollout data distributions causes a divergence of Q values at the onset of finetuning. We find that Q-value recalibration at the beginning of fine-tuning leads to excessive underestimation due to backups with over-pessimistic TD-targets. We call this the Downward Spiral, and is shown across 3 kitchen envs with 3 offline RL methods
-            </p>
-          </div>
+          <img src="../images/paper-images/wsrl/calql_different_mixing.png" style="width: 25%;" alt="Mixing Image">
+          <img src="../images/paper-images/wsrl/calql_different_mixing_q_blowup.png" style="width: 25%;" alt="Q values Blowup">
+          <img src="../images/paper-images/wsrl/calql_different_mixing_loss_blowup.png" style="width: 25%;" alt="TD Error Blowup">
+          <img src="../images/paper-images/wsrl/calql_different_mixing_loss_online.png" style="width: 25%;" alt="TD Loss Online">
         </div>
 
         <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto; margin-bottom: 40px;">
-          <img src="../images/paper-images/downwards_spiral_cql.png" style="width: 33%;" alt="Downward Spiral CQL">
-          <img src="../images/paper-images/downward-spiral-calql.png" style="width: 33%;" alt="Downward Spiral CalQL">
-          <img src="../images/paper-images/downward-spiral-iql.png" style="width: 33%;" alt="Downward Spiral IQL">
+          <img src="../images/paper-images/wsrl/downwards_spiral_cql.png" style="width: 33%;" alt="Downward Spiral CQL">
+          <img src="../images/paper-images/wsrl/downward-spiral-calql.png" style="width: 33%;" alt="Downward Spiral CalQL">
+          <img src="../images/paper-images/wsrl/downward-spiral-iql.png" style="width: 33%;" alt="Downward Spiral IQL">
         </div>
 
         <div class="content has-text-justified">
@@ -236,11 +237,11 @@ permalink: /wsrl/
             <p>
               While retaining offline data appears to be crucial for preventing forgetting at the beginning of fine-tuning for current fine-tuning methods,
                continuing to make updates on this offline data with an (pesimistic) offline RL algorithm negatively impacts asymptotic performance and efficiency.
-               RLPD starts from scratch, and is able to outperform CalQL with data retention.
+              We show this by comparing RLPD (which starts from scratch), against CalQL with data retention.
             </p>
           </div>
           <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto; margin-bottom: 40px;">
-            <img id="teaser" src="../images/paper-images/calql_rlpd_compare.png" alt="System Diagram" width="100%">
+            <img id="teaser" src="../images/paper-images/wsrl/calql_rlpd_compare.png" alt="System Diagram" width="100%">
           </div>
 
 
@@ -294,23 +295,22 @@ permalink: /wsrl/
       <div class="column">
         <div class="content has-text-justified">
           <p>
-            Our approach WSRL (Warm Start Reinforcement Learning) instantiates these insights into an extremely simple
-            and practical method that enables us to obtain strong fine-tuning results without offline data.  
+            Our approach WSRL (Warm-Start Reinforcement Learning) instantiates these insights into an extremely simple
+            and practical method that enables us to obtain strong fine-tuning results and quickly adapt online without using the offline dataset during online updates,
+             mirroring the common paradigm in machine learning at scale today.  
           </p>
           <p>
             WSRL is an online, off-policy, actor-critic algorithm. It initializes the value function
             and policy with the pre-trained Q-function 𝑄pre𝜃 and policy 𝜋pre
             𝜓 which could come from any offline RL algorithm. It then “simulates” continued training on
             offline data by collecting a small number of warmup transitions with the frozen offline RL policy at the onset
-            of online fine-tuning. This allows the Q-values to stabilize through a "warmup phase", and can prevent Q-divergence. 
+            of online fine-tuning. This allows the Q-values to stabilize through a "warmup phase", and can prevent Q-divergence and minimize catestrophic
+             forgetting.  
             WSRL then trains both the value and policy using standard temporal-difference (TD) updates and
             policy gradient. 
           </p>
           <p>
-            For fine-tuning, we train on these transitions an high updates-to-data (UTD) ratio to mitigate the effects of catestrophic forgetting. 
-            To combat issues such as overestimation in the high UTD regime, we use an
-            ensemble of Q functions and layer normalization in both the actor and the critic.
-            We hope that WSRL sheds light on the challenges in no-retention fine-tuning, and inspire future research on the important paradigm of no-retention RL fine-tuning. 
+            We hope that WSRL sheds light on the challenges in no-retention fine-tuning, and inspires future research on the important paradigm of no-retention RL fine-tuning. 
           </p>
         </div>
       </div>
@@ -321,16 +321,16 @@ permalink: /wsrl/
   <div class="container is-max-desktop">
     <h2 class="title is-3">Results</h2>
     <p>
-      WSRL is able to recover from the initial performance dip during finetuning, and is able to finetune efficiently compared to various no-retention RL algorithms across various environments. 
+      WSRL is able to recover from the initial performance dip during finetuning, and is able to finetune efficiently compared to various <b>no-retention</b> RL algorithms across various environments. 
     </p>
-    <div style="display: flex; justify-content: center; gap: 1%; width: 100%; margin: 0;">
-      <img id="teaser" src="../images/paper-images/nrf_finetune_results.png" alt="Nrf comparison" width="100%">
+    <div style="display: flex; justify-content: center; gap: 1%; width: 100%; margin: 0;  padding-bottom: 40px;">
+      <img id="teaser" src="../images/paper-images/wsrl/nrf_finetune_results.png" alt="Nrf comparison" width="100%">
     </div>
     <p>
       Even compared to methods that <b>retain offline data</b>, WSRL is able to outperform faster or competitively <b>without</b> retaining offline training data.
     </p>
     <div style="display: flex; justify-content: center; gap: 1%; width: 100%; margin: 0;">
-      <img id="teaser" src="../images/paper-images/baselines_compare.png" alt="Nrf comparison" width="100%">
+      <img id="teaser" src="../images/paper-images/wsrl/baselines_compare.png" alt="Nrf comparison" width="100%">
     </div>
   </div>
 </section>
@@ -339,12 +339,13 @@ permalink: /wsrl/
   <div class="container is-max-desktop">
     <h2 class="title">BibTeX</h2>
     <pre>
-      <code>@article{zhou2024autonomous,
-        title={Autonomous Improvement of Instruction Following Skills via Foundation Models},
-        author={Zhiyuan Zhou and Pranav Atreya and Abraham Lee and Homer Walke and Oier Mees and Sergey Levine},
-        journal = {arXiv preprint arXiv:407.20635},
-        year={2024},
-        }
+      <code>@article{zhou2024efficient,
+        author = {Zhiyuan Zhou and Andy Peng and Qiyang Li and Sergey Levine and Aviral Kumar},
+        title  = {Efficient Online Reinforcement Learning Fine-Tuning Need Not Retain Offline Data},
+        conference = {arXiv Pre-print},
+        year = {2024},
+        url = {http://arxiv.org/abs/2412.07762},
+      }
       </code>
     </pre>
   </div>
