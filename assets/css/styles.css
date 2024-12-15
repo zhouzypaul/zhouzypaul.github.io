@@ -129,3 +129,20 @@ nav#filter a {
 	color: #ffffff;
 	font-size: 12px;
 }
+
+.custom-box {
+    border: 1px solid rgba(243 244 246);   /* Border color */
+    padding: 20px;                /* Padding inside the box */
+    background-color: rgba(243 244 246);   /* Light grey background */
+    border-radius: 10px;          /* Rounded corners */
+    outline: none;                /* Remove outline */
+    padding-bottom: 40px; 
+  }
+  
+.custom-title {
+    border-bottom: 1px solid #d3d3d3;  /* Border under the title */
+    padding-bottom: 10px;              /* Space below the title */
+    font-size: 1.5rem;                 /* Optional: Title size */
+    margin-top: 0;                     /* Remove the margin on top of the title */
+}
+  

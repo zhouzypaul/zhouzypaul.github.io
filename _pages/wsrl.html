@@ -1,0 +1,308 @@
+---
+permalink: /wsrl/
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="WSRL: Efficient Online Reinforcement Learning Fine-Tuning Need Not Retain Offline Data">
+  <meta name="keywords" content="Reinforcement Learning Fine-tuning, No Data Retention, Offline to Online RL">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WSRL</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-slider@2.0.5/dist/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <!-- <link rel="stylesheet" href="./static/css/index.css"> -->
+  <link rel="icon" href="https://example.com/path/to/favicon.ico">
+</head>
+
+
+<body>
+
+<section class="hero">
+  <div class="hero-body"  style="padding-bottom: 0;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">Efficient Online Reinforcement Learning
+            Fine-Tuning Need Not Retain Offline Data</h1>
+          <!-- <h2 class="title" style="font-size: large; color: grey;"></h2> -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://zhouzypaul.github.io/">Zhiyuan Zhou</a><sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              <a href=""></a>Andy Peng<sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://colinqiyangli.github.io">Qiyang Li</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://aviralkumar2907.github.io">Aviral Kumar</a><sup>2</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup><font size="-0.1">1</sup>UC Berkeley</font></span>
+            <span class="author-block"><sup><font size="-0.1">2</sup>Carnegie Mellon University </font></span>
+            <span class="author-block"><sup><font size="-0.1">*</sup>Equal Contribution </font></span>
+          </div>
+
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2412.07762"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/zhouzypaul/wsrl"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser" style="padding-top: 0;">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" src="../images/paper-images/wsrl/wsrl_teaser.pdf" alt="System Diagram" width="100%">
+      <h2 class="subtitle has-text-centered">
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop has-text-centered">
+    <div class="custom-box">
+      <h2 class="title is-2"> TL;DR</h2>
+      <div class="columns">
+        <div class="column">
+          <div class="content has-text-justified">
+            <p class="is-size-5">
+
+              We introduce Warm-start RL (<b>WSRL</b>), a receipe to efficiently finetune RL agents online <b>without retaining and co-training on any offline datasets</b>.
+              The no-data-retention setting is important for truly scalable RL, where continued training on the big pre-training datasets is expensive.
+              However, current methods fail catastrophically in the no retention setting. We show that this is because the sudden distribution shift causes
+              Q-values to diverge on a <b>downward spiral</b> during the <b>re-calibration</b> phase at the start of fine-tuning.
+              WSRL uses a simple idea: pre-train with offline RL, then use a warmup phase to seed the online RL run with a very small number of rollouts from the pre-trained policy to do fast online RL. 
+              We find that WSRL <b>significantly outperforms baselines in the no-retention setting, and is also able to outperform methods that retain offline data</b>.
+            </p>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop ">
+    <h2 class="title is-3">Motivation</h2>
+    <div class="columns">
+      <div class="column">
+        <div class="content has-text-justified">
+          <p>
+            The modern paradigm in machine learning involves <b>pre-training on diverse data</b>, followed by <b>task-specific fine-tuning</b>. In RL, 
+            this translates to learning via offline RL on a diverse historical dataset, followed by rapid online RL fine-tuning using interaction data. 
+            Such a setting is important for <b>truly scalable RL</b>, where the offline dataset is big such that its continued training online is expensive;
+            furthermore, if pre-training is effective and fine-tuning done right, the pre-training should already capture the knowledge of the offline dataset, 
+            removing the need for co-training (such as current practices in LLMs).
+            However, we find that <b>without retaining offline data, current RL algorithms (e.g IQL, CQL, CalQL) fail catastrophically</b>. 
+          </p>
+          <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto;">
+            <img src="../images/paper-images/wsrl/challenges.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop ">
+    <h2 class="title is-3">Analysis</h2>
+    <div class="columns">
+      <div class="column">
+
+        <div class="custom-box" style="padding-bottom: 20px; margin-bottom: 20px;">
+          <div class="content has-text-justified">
+            <h3> 
+              Why do previous methods need to retain offline data?
+            </h3>
+            <p>
+              Training only on online experience during fine-tuning without offline data retention can <b>destroy how well the model fits offline data</b>
+              due to the <b>distribution shift</b> between offline dataset and online rollout data: 
+              despite attaining comparable TD-errors on the online data to the setting when offline data is retained, 
+              TD-errors under the offline distribution grow larger.
+            </p>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto; margin-bottom: 40px;">
+          <img src="../images/paper-images/wsrl/calql_different_mixing.png" style="width: 25%;" alt="Mixing Image">
+          <img src="../images/paper-images/wsrl/calql_different_mixing_q_blowup.png" style="width: 25%;" alt="Q values Blowup">
+          <img src="../images/paper-images/wsrl/calql_different_mixing_loss_blowup.png" style="width: 25%;" alt="TD Error Blowup">
+          <img src="../images/paper-images/wsrl/calql_different_mixing_loss_online.png" style="width: 25%;" alt="TD Loss Online">
+        </div>
+
+        <div class="custom-box" style="padding-bottom: 20px; margin-bottom: 20px;">
+          <div class="content has-text-justified">
+            <h3> 
+              Why do Q-values diverge?
+            </h3>
+            <p>
+              We find that Q-value recalibration at the beginning of <i>no-retention</i> fine-tuning leads to <b>excessive underestimation due to backups with over-pessimistic TD-targets</b>. 
+              See a mechanistic understanding of this <b>downward spiral</b> below.
+            </p>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto; margin-bottom: 40px;">
+          <img src="../images/paper-images/wsrl/downward-spiral-cql.png" style="width: 33%;" alt="Downward Spiral CQL">
+          <img src="../images/paper-images/wsrl/downward-spiral-calql.png" style="width: 33%;" alt="Downward Spiral CalQL">
+          <img src="../images/paper-images/wsrl/downward-spiral-iql.png" style="width: 33%;" alt="Downward Spiral IQL">
+        </div>
+
+        <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto; margin-bottom: 40px;">
+          <img src="../images/paper-images/wsrl/downward_spiral_intuition.pdf" style="width: 80%;" alt="Intuition for the downward spiral phenomenon">
+        </div>
+
+        <div class="content has-text-justified">
+          <div class="custom-box" style="padding-bottom: 20px; margin-bottom: 20px;">
+            <h3> 
+              Retaining offline data hurts asymptotic performance
+            </h3>
+            <p>
+              While retaining offline data appears to be crucial for preventing forgetting at the beginning of fine-tuning for current fine-tuning methods,
+               continuing to make updates on this offline data with an (pesimistic) offline RL algorithm <b>hurts asymptotic performance and efficiency</b>.
+            </p>
+          </div>
+          <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto; margin-bottom: 40px;">
+            <img id="teaser" src="../images/paper-images/wsrl/calql_rlpd_compare.png" alt="System Diagram" width="100%">
+          </div>
+
+
+    </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Method</h2>
+    <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto; margin-bottom: 40px;">
+      <img src="../images/paper-images/wsrl/method_figure.pdf" style="width: 80%;" alt="WSRL algorithm">
+    </div>
+  </div>
+
+  <div class="container is-max-desktop">
+    <div class="columns">
+      <div class="column">
+        <div class="content has-text-justified">
+          <p>
+            Warm-start RL (<b>WSRL</b>) is a simple and practical receipe that obtains strong fine-tuning results 
+            and quickly adapts online without using the offline dataset during online updates.
+            It is composed of three phases:
+          </p>
+          <ol>
+            <li><b>Initialize</b>: Pre-train of any offline RL algorithm, and initialize the pre-trained policy and value function at the start of fine-tuning.</li>
+            <li> <b>Warmup</b>: WSRL uses the first 𝐾 online steps to collect a few rollouts using the frozen offline RL policy to
+              simulate the retention of offline data. Such on-policy data bridges the distribution shift from the offline dataset and the online rollouts, and prevents Q-value divergence and the downward-spiral phenomenon. </li>
+            <li> <b>Online RL</b>: After warmup, WSRL updates with a standard online RL approach with no constraints or pessimism. We further accelerate online learning with high update-to-data ratios. </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Results</h2>
+    <p>
+      In <b>no-retention fine-tuning</b>, WSRL fine-tunes efficiently and <b>greatly outperforms all previous algorithms</b>,
+      which often fail to recover from an initial dip in performance. JSRL, the closest baseline, uses a data-collection technique similar to warmup.
+      Please refer to the <a href="https://arxiv.org/pdf/2412.07762" target="_blank">paper</a> for ablation experiments showing the importance of (1) warmup, (2) using a online RL algorithm for fine-tuning, 
+      and (3) initializing with the pre-trained policy and value function.
+    </p>
+    <br>
+
+    <div style="display: flex; justify-content: center; gap: 1%; width: 100%; margin: 0;  padding-bottom: 40px;">
+      <img id="teaser" src="../images/paper-images/wsrl/nrf_finetune_results.png" alt="Nrf comparison" width="100%">
+    </div>
+    <br
+
+    <p>
+      Even compared to methods that <b>do retain offline data</b> and therefore has access to more information during fine-tuning, 
+      <b>WSRL is able to fine-tune faster or competitively without retaining offline training data</b>.
+    </p>
+    <br>
+
+    <div style="display: flex; justify-content: center; gap: 1%; width: 100%; margin: 0;">
+      <img id="teaser" src="../images/paper-images/wsrl/baselines_compare.png" alt="Nrf comparison" width="100%">
+    </div>
+  </div>
+</section>
+<section class="hero" id="BibTeX">
+  <div class="container is-max-desktop">
+    <h2 class="title">BibTeX</h2>
+    <pre>
+      <code>@article{zhou2024efficient,
+        author = {Zhiyuan Zhou and Andy Peng and Qiyang Li and Sergey Levine and Aviral Kumar},
+        title  = {Efficient Online Reinforcement Learning Fine-Tuning Need Not Retain Offline Data},
+        conference = {arXiv Pre-print},
+        year = {2024},
+        url = {http://arxiv.org/abs/2412.07762},
+      }
+      </code>
+    </pre>
+  </div>
+  </section>
+<br><br>
+
+<footer class="footer">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>
+            under a 
+            <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
