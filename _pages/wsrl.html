@@ -42,7 +42,7 @@ permalink: /wsrl/
               <a href="https://zhouzypaul.github.io/">Zhiyuan Zhou</a><sup>1*</sup>,
             </span>
             <span class="author-block">
-              <a href=""></a>Andy Peng<sup>1*</sup>,
+              <a href="https://andypeng05.github.io/"></a>Andy Peng<sup>1*</sup>,
             </span>
             <span class="author-block">
               <a href="https://colinqiyangli.github.io">Qiyang Li</a><sup>1</sup>,
@@ -96,7 +96,7 @@ permalink: /wsrl/
 <section class="hero teaser" style="padding-top: 0;">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img id="teaser" src="../images/paper-images/wsrl/wsrl_teaser.pdf" alt="System Diagram" width="100%">
+      <img id="teaser" src="../images/paper-images/wsrl/teaser.png" alt="No retention fine-tuning paradigm" width="100%">
       <h2 class="subtitle has-text-centered">
       </h2>
     </div>
@@ -161,8 +161,8 @@ permalink: /wsrl/
             <p>
               Training only on online experience during fine-tuning without offline data retention can <b>destroy how well the model fits offline data</b>
               due to the <b>distribution shift</b> between offline dataset and online rollout data: 
-              despite attaining comparable TD-errors on the online data to the setting when offline data is retained, 
-              TD-errors under the offline distribution grow larger.
+              while TD-errors on the online data are comparable regardless of whether offline data is retained, 
+              TD-errors under the offline distribution increase noticeably when offline data is not retained.
             </p>
           </div>
         </div>
@@ -177,11 +177,12 @@ permalink: /wsrl/
         <div class="custom-box" style="padding-bottom: 20px; margin-bottom: 20px;">
           <div class="content has-text-justified">
             <h3> 
-              Why do Q-values diverge?
+              Key observation: Q-values diverge on a downward spiral. Why?
             </h3>
             <p>
-              We find that Q-value recalibration at the beginning of <i>no-retention</i> fine-tuning leads to <b>excessive underestimation due to backups with over-pessimistic TD-targets</b>. 
-              See a mechanistic understanding of this <b>downward spiral</b> below.
+              We observe that not only do Q-values diverge on the offline distribution, Q-values on the online distribution also go through underestimation at the onset of <i>no-retention</i> fine-tuning.
+              We find that this <b>excessive underestimation is because of backups with over-pessimistic TD-targets</b> during Q-value recalibration.
+              See evidence and a mechanistic understanding of this <b>downward spiral</b> below.
             </p>
           </div>
         </div>
@@ -193,7 +194,7 @@ permalink: /wsrl/
         </div>
 
         <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto; margin-bottom: 40px;">
-          <img src="../images/paper-images/wsrl/downward_spiral_intuition.pdf" style="width: 80%;" alt="Intuition for the downward spiral phenomenon">
+          <img src="../images/paper-images/wsrl/downward_spiral_intuition.png" style="width: 80%;" alt="Intuition for the downward spiral phenomenon">
         </div>
 
         <div class="content has-text-justified">
@@ -202,8 +203,9 @@ permalink: /wsrl/
               Retaining offline data hurts asymptotic performance
             </h3>
             <p>
-              While retaining offline data appears to be crucial for preventing forgetting at the beginning of fine-tuning for current fine-tuning methods,
-               continuing to make updates on this offline data with an (pesimistic) offline RL algorithm <b>hurts asymptotic performance and efficiency</b>.
+              While retaining offline data appears to be crucial for stability at the beginning of fine-tuning for current fine-tuning methods,
+              continuing to make updates on this offline data with an (pessimistic) offline RL algorithm <b>hurts asymptotic performance and efficiency</b>.
+              Specifically, we find that offline RL fine-tuning that co-trains on offline data (e.g. CalQL) is substantially slower than online RL algorithms from scratch (e.g. RLPD).
             </p>
           </div>
           <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto; margin-bottom: 40px;">
@@ -218,7 +220,7 @@ permalink: /wsrl/
   <div class="container is-max-desktop">
     <h2 class="title is-3">Method</h2>
     <div style="display: flex; justify-content: center; gap: 1%; width: 90%; margin: 0 auto; margin-bottom: 40px;">
-      <img src="../images/paper-images/wsrl/method_figure.pdf" style="width: 80%;" alt="WSRL algorithm">
+      <img src="../images/paper-images/wsrl/algorithm.png" style="width: 80%;" alt="WSRL algorithm">
     </div>
   </div>
 
@@ -245,31 +247,38 @@ permalink: /wsrl/
 <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-3">Results</h2>
-    <p>
-      In <b>no-retention fine-tuning</b>, WSRL fine-tunes efficiently and <b>greatly outperforms all previous algorithms</b>,
-      which often fail to recover from an initial dip in performance. JSRL, the closest baseline, uses a data-collection technique similar to warmup.
-      Please refer to the <a href="https://arxiv.org/pdf/2412.07762" target="_blank">paper</a> for ablation experiments showing the importance of (1) warmup, (2) using a online RL algorithm for fine-tuning, 
-      and (3) initializing with the pre-trained policy and value function.
-    </p>
-    <br>
+
+    <div class="custom-box" style="padding-bottom: 20px; margin-bottom: 20px;">
+      <div class="content has-text-justified">
+        <p>
+          In <b>no-retention fine-tuning</b>, WSRL fine-tunes efficiently and <b>greatly outperforms all previous algorithms</b>,
+          which often fail to recover from an initial dip in performance. JSRL, the closest baseline, uses a data-collection technique similar to warmup.
+          Please refer to the <a href="https://arxiv.org/pdf/2412.07762" target="_blank">paper</a> for ablation experiments showing the importance of (1) warmup, (2) using a online RL algorithm for fine-tuning, 
+          and (3) initializing with the pre-trained policy and value function.
+        </p>
+      </div>
+    </div>
 
     <div style="display: flex; justify-content: center; gap: 1%; width: 100%; margin: 0;  padding-bottom: 40px;">
       <img id="teaser" src="../images/paper-images/wsrl/nrf_finetune_results.png" alt="Nrf comparison" width="100%">
     </div>
-    <br
 
-    <p>
-      Even compared to methods that <b>do retain offline data</b> and therefore has access to more information during fine-tuning, 
-      <b>WSRL is able to fine-tune faster or competitively without retaining offline training data</b>.
-    </p>
-    <br>
+    <div class="custom-box" style="padding-bottom: 20px; margin-bottom: 20px;">
+      <div class="content has-text-justified">
+        <p>
+          Even compared to methods that <b>do retain offline data</b> and therefore has access to more information during fine-tuning, 
+          <b>WSRL is able to fine-tune faster or competitively without retaining offline training data</b>.
+        </p>
+      </div>
+    </div>
 
     <div style="display: flex; justify-content: center; gap: 1%; width: 100%; margin: 0;">
       <img id="teaser" src="../images/paper-images/wsrl/baselines_compare.png" alt="Nrf comparison" width="100%">
     </div>
   </div>
 </section>
-<section class="hero" id="BibTeX">
+
+<section class="section" id="BibTeX">
   <div class="container is-max-desktop">
     <h2 class="title">BibTeX</h2>
     <pre>

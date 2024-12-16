@@ -11,7 +11,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
 [CV](/pdfs/bio/CV.pdf) \|
 [Google Scholar](https://scholar.google.com/citations?user=unQVOJkAAAAJ&hl=en) \|
 [Github](https://github.com/zhouzypaul) \|
-[Twitter](https://twitter.com/zhiyuan_zhou_) \|
+[Twitter](https://twitter.com/zhiyuan_zhou_)
 {: style="text-align: center;font-size: 100%"}
 
 
@@ -29,7 +29,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div>
-                <img src='/images/paper-images/wsrl.pdf' width="280">
+                <img src='/images/paper-images/wsrl/teaser.png' width="280">
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -41,7 +41,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
                 <span class="skill">fine-tuning</span>
               </div>
               <strong>Zhiyuan Zhou*</strong>,
-              <a href="https://www.linkedin.com/in/andypeng05">Andy Peng*</a>,
+              <a href="https://andypeng05.github.io/">Andy Peng*</a>,
               <a href="https://colinqiyangli.github.io">Qiyang Li</a>,
               <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>,
               <a href="https://aviralkumar2907.github.io">Aviral Kumar</a>,
