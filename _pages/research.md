@@ -68,10 +68,8 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
           <!-- <tr bgcolor="#ffffd0"> -->
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div>
-                <!-- <img src='/images/paper-images/soar.pdf' width="260"> -->
-                <!-- <blockquote class="twitter-tweet" data-media-max-width="260"><p lang="en" dir="ltr">Can robots self-improve by collecting data autonomously🤖?<br><br>Introducing SOAR: a system for large-scale autonomous data collection 🚀 and autonomous improvement📈of a multi-task language-conditioned policy in diverse scenes without human interventions .<a href="https://t.co/tepGrLQYdw">https://t.co/tepGrLQYdw</a> <a href="https://t.co/LBddvbib92">pic.twitter.com/LBddvbib92</a></p>&mdash; Paul Zhou (@zhiyuan_zhou_) <a href="https://twitter.com/zhiyuan_zhou_/status/1818338141788684706?ref_src=twsrc%5Etfw">July 30, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
-                <video width="260" height="210" controls autoplay>
+              <div style="max-width:100%; display:flex; justify-content:center;">
+                <video style="width:100%; max-width:280px; height:auto;" controls autoplay>
                   <source src="https://auto-improvement.github.io/static/videos/teaser_video.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
