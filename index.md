@@ -4,10 +4,28 @@ layout: splash
 permalink: /
 ---
 
-![Zhiyuan Paul Zhou](./images/new_profile.jpg)
-{:style="float: right; padding: 30px; max-width: 30%; min-width: 330px;"}
+<style>
+  .profile-img {
+    display: block;
+    margin: 0 0 50px 0;
+    max-width: 100%;
+    width: 300px;
+    padding: 20px;
+  }
+  @media (min-width: 768px) {
+    .profile-img {
+      float: right;
+      margin: 0 0 50px 80px;
+      padding-left: 20px;
+      width: 30%;
+      min-width: 330px;
+    }
+  }
+</style>
 
-<br/>
+![Zhiyuan Paul Zhou](./images/new_profile.jpg)
+{: .profile-img}
+
 Hi there! Welcome to my home page. I'm Zhiyuan; my friends call me Paul.
 
 I am currently a CS Ph.D. student at [UC Berkeley](https://www.berkeley.edu), advised by professor [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/). I am interested in reinforcement learning and building autonomous intelligent agents.
@@ -19,7 +37,7 @@ I love connecting with people. If you'd like to get in contact with me, please r
 
 ## Recent News
 last updated: Dec 2024
-- New paper out on how to do RL fine-tuning without offline data retention! I'm excited to see how [Warm-start RL (WSRL)](http://arxiv.org/abs/2412.07762) can help scale up RL for real-world tasks.
+- New paper out on how to do RL fine-tuning without offline data retention! I'm excited to see how [Warm-start RL (WSRL)](http://arxiv.org/abs/2412.07762) can help scale up RL for real-world tasks. Update: WSRL is accepted at ICLR 2025!
 - I am thrilled to announce the first big project I led in my Ph.D! Check out [SOAR: Autonomous Improvement of Instruction Following Skills via Foundation Models](https://auto-improvement.github.io). Catch SOAR at CoRL 2024 in Munich! 
 - I am going to present my undergrad work [Tiered Reward: Designing Rewards for Specification and Fast Learning of Desired Behavior](/tiered_reward/) at the [RL Conference](https://rl-conference.cc). Come chat with me!
 - Check out my undergrad thesis [Policy Transfer in Lifelong Reinforcement Learning through Learning Generalizing Features](https://cs.brown.edu/media/filer_public/c2/72/c272a1f8-1186-4a85-8f97-cfe8a1a7278a/zhouzhiyuan_honors_thesis.pdf).

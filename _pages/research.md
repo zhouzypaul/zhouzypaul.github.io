@@ -46,7 +46,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>,
               <a href="https://aviralkumar2907.github.io">Aviral Kumar</a>,
               <br>
-				<em>arXiv preprint</em>, 2024
+				<em>International Conference on Learning Representations (ICLR)</em>, 2025
               <br>
               [<a href="http://arxiv.org/abs/2412.07762">paper</a>]
               [<a href="/wsrl/">website</a>]
