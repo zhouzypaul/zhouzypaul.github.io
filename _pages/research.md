@@ -29,6 +29,42 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div>
+                <img src='/images/paper-images/skill_transfer.jpeg' width="280" height="180">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
+              Learning Transferable Sub-Goals by Hypothesizing Generalizing Features
+              </p>
+              <div class="skills">
+                <span class="skill">hierarchical RL</span>
+                <span class="skill">skill transfer</span>
+              </div>
+              <a href="https://scholar.google.com/citations?user=yCd081YAAAAJ&hl=en">Anita de Mello Koch</a>,
+              <a href="https://abagaria.github.io">Akhil Bagaria</a>,
+              <a href="https://www.linkedin.com/in/bingnan-huo-a04444258">Bingnan Huo</a>,
+              <strong>Zhiyuan Zhou</strong>,
+              <a href="https://camallen.net">Cameron Allen</a>,
+              <a href="https://cs.brown.edu/people/gdk/">George Konidaris</a>
+              <br>
+				<em>AAAI Workshop on Generalization in Planning</em>, 2025
+              <br>
+              [<a href="https://openreview.net/pdf?id=I3lTKA9tjO">paper</a>]
+              <br>
+              <p>
+              Hierarchical RL is sample efficient when the <b>low level skills are transfered and reused</b>. However, learning transferable skills is hard when the agent is only exposed to few, or one, instance of the task. We find that we can identify subgoals that transfer to unseen tasks with an <b>ensemble of classifiers that focus on diverse features</b>.<br>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+</table> 
+
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <!-- <tr bgcolor="#ffffd0"> -->
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div>
                 <img src='/images/paper-images/wsrl/teaser.png' width="280">
               </div>
             </td>
@@ -44,7 +80,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <a href="https://andypeng05.github.io/">Andy Peng*</a>,
               <a href="https://colinqiyangli.github.io">Qiyang Li</a>,
               <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>,
-              <a href="https://aviralkumar2907.github.io">Aviral Kumar</a>,
+              <a href="https://aviralkumar2907.github.io">Aviral Kumar</a>
               <br>
 				<em>International Conference on Learning Representations (ICLR)</em>, 2025
               <br>
@@ -88,7 +124,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <a href="https://www.linkedin.com/in/abraham-lee-4a0497242?original_referer=https%3A%2F%2Fwww.google.com%2F">Abraham Lee</a>,
               <a href="https://homerwalke.com/">Homer Walke</a>,
               <a href="https://www.oiermees.com/">Oier Mees</a>,
-              <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>,
+              <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
               <br>
               <em>Conference on Robot Learning (CoRL)</em>, 2024.
               <br>

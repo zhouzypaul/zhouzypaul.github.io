@@ -26,10 +26,10 @@ permalink: /
 ![Zhiyuan Paul Zhou](./images/new_profile.jpg)
 {: .profile-img}
 
-Hi there! Welcome to my home page. I'm Zhiyuan; my friends call me Paul.
+Hi there! Welcome to my home page. My name is Zhiyuan, though I usually go by Paul.
 
 I am currently a CS Ph.D. student at [UC Berkeley](https://www.berkeley.edu), advised by professor [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/). I am interested in reinforcement learning and building autonomous intelligent agents.
-I graduated magna cum laude from [Brown University](https://www.brown.edu) with an Sc.B. in Applied Math and Computer Science, where I was advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael Littman](https://www.littmania.com) at Brown. Check out my [research page](/research/) for more information.
+Before this, I graduated magna cum laude from [Brown University](https://www.brown.edu) with an Sc.B. in Applied Math and Computer Science, where I was advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael Littman](https://www.littmania.com) at Brown. Check out my [research page](/research/) for more information.
 
 Outside of this, I like to jam on my guitar, play badminton, and watch standups and movies.
 
