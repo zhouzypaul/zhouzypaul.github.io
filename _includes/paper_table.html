@@ -1,0 +1,34 @@
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <tbody>
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div>
+          {% if include.custom_image %}
+            {{ include.custom_image }}
+          {% else %}
+            <img src='{{ include.image }}' width="{% if include.width %}{{ include.width }}{% else %}280{% endif %}" {% if include.height %}height="{{ include.height }}"{% endif %}>
+          {% endif %}
+        </div>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
+          {{ include.title }}
+        </p>
+        <div class="skills">
+          {% for skill in include.skills %}
+          <span class="skill">{{ skill }}</span>
+          {% endfor %}
+        </div>
+        {{ include.authors }}
+        <br>
+        <em>{{ include.venue }}</em>{% if include.award %} {{ include.award }}{% endif %}
+        <br>
+        {{ include.links }}
+        <br>
+        <p>
+          {{ include.description }}<br>
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
