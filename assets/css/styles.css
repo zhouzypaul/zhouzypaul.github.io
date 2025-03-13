@@ -145,4 +145,16 @@ nav#filter a {
     font-size: 1.5rem;                 /* Optional: Title size */
     margin-top: 0;                     /* Remove the margin on top of the title */
 }
-  
+
+/* Paper highlight class for easy application */
+.paper-highlight {
+    background-color: #ffffd0;  /* Light yellow background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove margin and padding for tables */
+table {
+    margin: 0;
+    padding: 0;
+}

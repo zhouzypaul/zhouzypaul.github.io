@@ -47,21 +47,20 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <a href="https://camallen.net">Cameron Allen</a>,
               <a href="https://cs.brown.edu/people/gdk/">George Konidaris</a>
               <br>
-				<em>AAAI Workshop on Generalization in Planning</em>, 2025
+				<em>AAAI Workshop on Generalization in Planning</em>, 2025. <FONT COLOR="red">(Oral) </FONT>
               <br>
               [<a href="https://openreview.net/pdf?id=I3lTKA9tjO">paper</a>]
               <br>
               <p>
-              Hierarchical RL is sample efficient when the <b>low level skills are transfered and reused</b>. However, learning transferable skills is hard when the agent is only exposed to few, or one, instance of the task. We find that we can identify subgoals that transfer to unseen tasks with an <b>ensemble of classifiers that focus on diverse features</b>.<br>
+              How do we transfer low level skills in hierarchical RL to make it sample efficient, especially in the context of one-shot and few-shot learning? We find that we can learn subgoals classifiers that transfer to unseen tasks with an <b>ensemble of classifiers that focus on diverse features</b>.<br>
               </p>
             </td>
           </tr>
         </tbody>
-</table> 
+</table>
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<table class="paper-highlight" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
-          <!-- <tr bgcolor="#ffffd0"> -->
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div>
@@ -90,14 +89,14 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <br>
               <p>
               Can we finetune policies and values from offline RL <b>*without retaining the offline data*</b>? Current methods require keeping the offline data
-              for stability and performance, but this make RL hard to scale up when the offline dataset gets bigger and bigger. Turns out a simple receipe, Warm-start RL, is able to finetune rapidly without data retention! <br>
+              for stability and performance, but this make RL hard to scale up when the offline dataset gets bigger and bigger. Turns out a <b>simple recipe, Warm-start RL</b>, is able to finetune rapidly without data retention! <br>
               </p>
             </td>
           </tr>
         </tbody>
-</table> 
+</table>
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<table class="paper-highlight" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
           <!-- <tr bgcolor="#ffffd0"> -->
           <tr>
@@ -139,7 +138,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
             </td>
           </tr>
         </tbody>
-</table> 
+</table>
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
@@ -178,7 +177,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
             </td>
           </tr>
         </tbody>
-</table> 
+</table>
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
@@ -213,7 +212,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
             </td>
           </tr>
         </tbody>
-</table> 
+</table>
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
@@ -282,8 +281,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
             </td>
           </tr>
         </tbody>
-</table> 
-
+</table>
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
           <!-- <tr bgcolor="#ffffd0"> -->
