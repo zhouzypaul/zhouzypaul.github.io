@@ -21,6 +21,45 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
 
 ## Publications
 
+### Preprints
+
+<table class="paper-highlight" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div>
+                <img src='https://auto-eval.github.io/assets/teaser.png' width="280">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
+              AutoEval: Autonomous Evaluation of Generalist Robot Manipulation Policies in the Real World
+              </p>
+              <div class="skills">
+                <span class="skill">Robotics</span>
+              </div>
+              <strong>Zhiyuan Zhou</strong>,
+              <a href="https://pranavatreya.github.io">Pranav Atreya</a>,
+              <a href="https://youliangtan.github.io">You Liang Tan</a>,
+              <a href="https://kpertsch.github.io">Karl Pertsch</a>,
+              <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
+              <br>
+				<em>ICLR Robot Learning Workshop</em>, 2025. <FONT COLOR="red">(Oral) </FONT>
+              <br>
+              [<a href="https://auto-eval.github.io/assets/paper.pdf">paper</a>]
+              [<a href="https://auto-eval.github.io/">website</a>]
+              [<a href="https://github.com/zhouzypaul/auto_eval">code</a>]
+              <br>
+              <p>
+              Evaluating generalist robot policies is very time consuming. We propose AutoEval, a system that <b>autonomously evaluates</b> generalist policies in the real world with learned success detectors and reset policies. 
+              We <b>open access</b> to two AutoEval stations for researchers to evaluate their policies. Submit your policy for evaluation in minutes!
+              </p>
+            </td>
+          </tr>
+        </tbody>
+</table>
+
+
 ### Conferences 
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
