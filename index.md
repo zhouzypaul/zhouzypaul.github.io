@@ -23,7 +23,7 @@ permalink: /
   }
 </style>
 
-![Zhiyuan Paul Zhou](./images/new_profile.jpg)
+![Zhiyuan Paul Zhou](./images/new_profile.png)
 {: .profile-img}
 
 Hi there! Welcome to my home page. My name is Zhiyuan, though I usually go by Paul.

@@ -21,14 +21,17 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
 
 ## Publications
 
-### Preprints
+### Conferences / Workshops
 
 <table class="paper-highlight" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div>
-                <img src='https://auto-eval.github.io/assets/teaser.png' width="280">
+              <div style="max-width:100%; display:flex; justify-content:center;">
+                <video style="width:100%; max-width:280px; height:auto;" controls autoplay>
+                  <source src="https://auto-eval.github.io/assets/video.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -46,7 +49,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <br>
 				<em>ICLR Robot Learning Workshop</em>, 2025. <FONT COLOR="red">(Oral) </FONT>
               <br>
-              [<a href="https://auto-eval.github.io/assets/paper.pdf">paper</a>]
+              [<a href="https://arxiv.org/abs/2503.24278">paper</a>]
               [<a href="https://auto-eval.github.io/">website</a>]
               [<a href="https://github.com/zhouzypaul/auto_eval">code</a>]
               <br>
@@ -58,9 +61,6 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
           </tr>
         </tbody>
 </table>
-
-
-### Conferences 
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
