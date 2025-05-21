@@ -36,8 +36,8 @@ Outside of this, I like to jam on my guitar, play badminton, and watch standups 
 I love connecting with people. If you'd like to get in contact with me, please reach out at [zhiyuan_zhou at berkeley dot edu].
 
 ## Recent News
-last updated: Mar 2025
-- Excited to announce [AutoEval](https://auto-eval.github.io), a system that autonomously evaluates generalist robot policies in the real world. I'm super excited to open access this resource and see how it can help the community! Give it a try and evaluate your policy now :)
+- May 2025: I'm spending the summer as a research intern at [Physical Intelligence](https://pi.website).
+- March 2025: Excited to announce [AutoEval](https://auto-eval.github.io), a system that autonomously evaluates generalist robot policies in the real world. I'm super excited to open access this resource and see how it can help the community! Give it a try and evaluate your policy now :)
 - New paper out on how to do RL fine-tuning without offline data retention! I'm excited to see how [Warm-start RL (WSRL)](http://arxiv.org/abs/2412.07762) can help scale up RL for real-world tasks. Update: WSRL is accepted at ICLR 2025!
 - I am thrilled to announce the first big project I led in my Ph.D! Check out [SOAR: Autonomous Improvement of Instruction Following Skills via Foundation Models](https://auto-improvement.github.io). Catch SOAR at CoRL 2024 in Munich! 
 - I am going to present my undergrad work [Tiered Reward: Designing Rewards for Specification and Fast Learning of Desired Behavior](/tiered_reward/) at the [RL Conference](https://rl-conference.cc). Come chat with me!
