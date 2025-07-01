@@ -278,6 +278,48 @@ permalink: /wsrl/
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Robot Results</h2>
+    <div class="content has-text-justified">
+      <p>
+        WSRL is able to effectively leverage pre-training for rapid online learning in the real world. We evaluate WSRL against SERL on <i>franka peg insertion</i> using a Franka Emika Panda robot arm. Initialized from an offline CalQL checkpoint, WSRL improves from a 13/20 to a perfect 20/20 success rate in just 18 minutes (5k warmup + <b>3k actor steps</b>) of real-time training whereas SERL fails to solve the task (0/20 success) within 50 minutes (20k actor steps).
+      </p>
+    </div>
+    <!-- Container for side-by-side videos with labels -->
+    <div style="width: 100%; margin: 0;">
+      <!-- Video labels -->
+      <div style="display: flex; width: 100%; gap: 10px; margin-bottom: 8px;">
+        <div style="width: 67%; text-align: center;">
+          <span style="font-weight: bold; font-size: 1.1em;">Training run: WSRL vs SERL</span>
+        </div>
+        <div style="width: 33%; text-align: center;">
+          <span style="font-weight: bold; font-size: 1.1em;">WSRL Eval (20/20) @ 3k actor steps</span>
+        </div>
+      </div>
+      
+      <!-- Videos -->
+      <div style="display: flex; width: 100%; gap: 10px;">
+        <!-- Left video: WSRL.mov -->
+        <div style="width: 67%;">
+          <video controls autoplay loop muted playsinline width="100%">
+            <source src="../images/paper-images/wsrl/WSRL.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        
+        <!-- Right video: wsrl_evals_cropped.mov -->
+        <div style="width: 33%;">
+          <video controls autoplay loop muted playsinline width="100%">
+            <source src="../images/paper-images/wsrl/wsrl_evals_cropped.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop">
     <h2 class="title">BibTeX</h2>
