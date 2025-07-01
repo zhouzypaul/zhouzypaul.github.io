@@ -286,35 +286,33 @@ permalink: /wsrl/
         WSRL is able to effectively leverage pre-training for rapid online learning in the real world. We evaluate WSRL against SERL on <i>franka peg insertion</i> using a Franka Emika Panda robot arm. Initialized from an offline CalQL checkpoint, WSRL improves from a 13/20 to a perfect 20/20 success rate in just 18 minutes (5k warmup + <b>3k actor steps</b>) of real-time training whereas SERL fails to solve the task (0/20 success) within 50 minutes (20k actor steps).
       </p>
     </div>
-    <!-- Container for side-by-side videos with labels -->
+    <!-- Container for stacked videos with labels -->
     <div style="width: 100%; margin: 0;">
-      <!-- Video labels -->
-      <div style="display: flex; width: 100%; gap: 10px; margin-bottom: 8px;">
-        <div style="width: 67%; text-align: center;">
-          <span style="font-weight: bold; font-size: 1.1em;">Training run: WSRL vs SERL</span>
-        </div>
-        <div style="width: 33%; text-align: center;">
-          <span style="font-weight: bold; font-size: 1.1em;">WSRL Eval (20/20) @ 3k actor steps</span>
-        </div>
+      <!-- Top video label -->
+      <div style="width: 100%; text-align: center; margin-bottom: 8px;">
+        <span style="font-weight: bold; font-size: 1.1em;">WSRL learns the task at 3k steps in 7min</span>
       </div>
       
-      <!-- Videos -->
-      <div style="display: flex; width: 100%; gap: 10px;">
-        <!-- Left video: WSRL.mov -->
-        <div style="width: 67%;">
-          <video controls autoplay loop muted playsinline width="100%">
-            <source src="../images/paper-images/wsrl/WSRL.mov" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        
-        <!-- Right video: wsrl_evals_cropped.mov -->
-        <div style="width: 33%;">
-          <video controls autoplay loop muted playsinline width="100%">
-            <source src="../images/paper-images/wsrl/wsrl_evals_cropped.mov" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
+      <!-- Top video: wsrl_evals_cropped.mov (centered) -->
+      <div style="width: 100%; margin-bottom: 20px; display: flex; justify-content: center;">
+        <video controls autoplay loop muted playsinline width="75%">
+          <source src="../images/paper-images/wsrl/wsrl_eval_clipped.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      
+      <!-- Bottom video label -->
+      <div style="width: 100%; text-align: center; margin-bottom: 8px;">
+        <span style="font-weight: bold; font-size: 1.1em;">Uncut Training process: SERL vs WSRL</span>
+      </div>
+      
+      <!-- Bottom video: WSRL.mov (full width) -->
+      <div style="width: 100%;">
+        <video controls autoplay loop muted playsinline width="100%">
+          <source src="../images/paper-images/wsrl/WSRL.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
       </div>
     </div>
   </div>
