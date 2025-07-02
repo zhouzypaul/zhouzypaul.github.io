@@ -36,6 +36,8 @@ Outside of this, I like to jam on my guitar, play badminton, and watch standups 
 I love connecting with people. If you'd like to get in contact with me, please reach out at [zhiyuan_zhou at berkeley dot edu].
 
 ## Recent News
+- July 2025: [WSRL](/wsrl/) now works on robots!
+- June 2025: Honored that [AutoEval](https://auto-eval.github.io) won the Best Paper Award at RSS 2025 Robot Evaluation Workshop. And fun to catch up with old and new friends at RSS!
 - May 2025: I'm spending the summer as a research intern at [Physical Intelligence](https://pi.website).
 - March 2025: Excited to announce [AutoEval](https://auto-eval.github.io), a system that autonomously evaluates generalist robot policies in the real world. I'm super excited to open access this resource and see how it can help the community! Give it a try and evaluate your policy now :)
 - New paper out on how to do RL fine-tuning without offline data retention! I'm excited to see how [Warm-start RL (WSRL)](http://arxiv.org/abs/2412.07762) can help scale up RL for real-world tasks. Update: WSRL is accepted at ICLR 2025!

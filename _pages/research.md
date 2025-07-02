@@ -47,7 +47,8 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <a href="https://kpertsch.github.io">Karl Pertsch</a>,
               <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
               <br>
-				<em>ICLR Robot Learning Workshop</em>, 2025. <FONT COLOR="red">(Oral) </FONT>
+				<em>ICLR Robot Learning Workshop</em>, 2025. <FONT COLOR="red">(Oral) </FONT> <br>
+        <em>RSS Robot Evaluation Workshop</em>, 2025. <FONT COLOR="red">(Best Paper) </FONT>
               <br>
               [<a href="https://arxiv.org/abs/2503.24278">paper</a>]
               [<a href="https://auto-eval.github.io/">website</a>]
