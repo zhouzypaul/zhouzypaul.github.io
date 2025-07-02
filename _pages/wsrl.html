@@ -278,6 +278,46 @@ permalink: /wsrl/
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Robot Results</h2>
+    <div class="content has-text-justified">
+      <p>
+        WSRL enables highly efficient RL fine-tuning on real robots! We compare WSRL against SERL on <i>franka peg insertion</i>. Initialized from an offline CalQL checkpoint, WSRL finetunes to a perfect 20/20 success rate in just 18 minutes (roughly 5k warmup + 3k actor steps, <b>7 minutes</b> without including warmup), whereas SERL fails (0/20) even with 50 minutes.
+      </p>
+    </div>
+    <!-- Container for stacked videos with labels -->
+    <div style="width: 100%; margin: 0;">
+      <!-- Top video label -->
+      <div style="width: 100%; text-align: center; margin-bottom: 8px;">
+        <span style="font-weight: bold; font-size: 1.1em;">WSRL learns the task at 3k steps in 7min</span>
+      </div>
+      
+      <!-- Top video: wsrl_evals_cropped.mov (centered) -->
+      <div style="width: 100%; margin-bottom: 20px; display: flex; justify-content: center;">
+        <video controls autoplay loop muted playsinline width="75%">
+          <source src="../images/paper-images/wsrl/wsrl_eval_clipped.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      
+      <!-- Bottom video label -->
+      <div style="width: 100%; text-align: center; margin-bottom: 8px;">
+        <span style="font-weight: bold; font-size: 1.1em;">Uncut Training process: SERL vs WSRL</span>
+      </div>
+      
+      <!-- Bottom video: WSRL.mov (full width) -->
+      <div style="width: 100%;">
+        <video controls autoplay loop muted playsinline width="100%">
+          <source src="../images/paper-images/wsrl/wsrl_vs_serl.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop">
     <h2 class="title">BibTeX</h2>
