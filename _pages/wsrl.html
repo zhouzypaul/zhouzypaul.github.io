@@ -283,7 +283,7 @@ permalink: /wsrl/
     <h2 class="title is-3">Robot Results</h2>
     <div class="content has-text-justified">
       <p>
-        WSRL is able to effectively leverage pre-training for rapid online learning in the real world. We evaluate WSRL against SERL on <i>franka peg insertion</i> using a Franka Emika Panda robot arm. Initialized from an offline CalQL checkpoint, WSRL improves from a 13/20 to a perfect 20/20 success rate in just 18 minutes (5k warmup + <b>3k actor steps</b>) of real-time training whereas SERL fails to solve the task (0/20 success) within 50 minutes (20k actor steps).
+        WSRL enables highly efficient RL fine-tuning on real robots! We compare WSRL against SERL on <i>franka peg insertion</i>. Initialized from an offline CalQL checkpoint, WSRL finetunes to a perfect 20/20 success rate in just 18 minutes (roughly 5k warmup + 3k actor steps, <b>7 minutes</b> without including warmup), whereas SERL fails (0/20) even with 50 minutes.
       </p>
     </div>
     <!-- Container for stacked videos with labels -->
@@ -296,7 +296,7 @@ permalink: /wsrl/
       <!-- Top video: wsrl_evals_cropped.mov (centered) -->
       <div style="width: 100%; margin-bottom: 20px; display: flex; justify-content: center;">
         <video controls autoplay loop muted playsinline width="75%">
-          <source src="../images/paper-images/wsrl/wsrl_eval_clipped.mov" type="video/mp4">
+          <source src="../images/paper-images/wsrl/wsrl_eval_clipped.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -309,7 +309,7 @@ permalink: /wsrl/
       <!-- Bottom video: WSRL.mov (full width) -->
       <div style="width: 100%;">
         <video controls autoplay loop muted playsinline width="100%">
-          <source src="../images/paper-images/wsrl/WSRL.mov" type="video/mp4">
+          <source src="../images/paper-images/wsrl/wsrl_vs_serl.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
