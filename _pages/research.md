@@ -27,6 +27,40 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
         <tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
+              <div>
+                <!-- <img src='/images/paper-images/' width="280"> -->
+                <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Everyone knows action chunking is great for imitation learning. It turns out that we can extend its success to RL to better leverage prior data for improved exploration and online sample efficiency! <a href="https://t.co/J5LdRRYbSH">https://t.co/J5LdRRYbSH</a> <br><br>The recipe to achieve this is incredibly simple. 🧵 1/N <a href="https://t.co/c2N7PZL9Pw">pic.twitter.com/c2N7PZL9Pw</a></p>&mdash; Qiyang Li @ ICML (@qiyang_li) <a href="https://twitter.com/qiyang_li/status/1943833366685790693?ref_src=twsrc%5Etfw">July 12, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
+                Reinforcement Learning with Action Chunking
+              </p>
+              <div class="skills">
+                <span class="skill">deep reinforcement learning</span>
+              </div>
+              <a href="https://colinqiyangli.github.io">Qiyang Li</a>,
+              <strong>Zhiyuan Zhou</strong>,
+              <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
+              <br>
+				<em>ICML EXAIT workshop</em>, 2025
+              <br>
+              [<a href="https://arxiv.org/abs/2507.07969">paper</a>]
+              [<a href="https://colinqiyangli.github.io/qc/">website</a>]
+              [<a href="https://github.com/ColinQiyangLi/qc">code</a>]
+              <br>
+              <p>
+              Q-chunking runs RL on a temporally extended action (<b>action chunking</b>) space with an expressive behavior constraint to leverage prior data for improved exploration and online sample efficiency.<br>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+</table>
+
+<table class="paper-highlight" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
               <div style="max-width:100%; display:flex; justify-content:center;">
                 <video style="width:100%; max-width:280px; height:auto;" controls autoplay>
                   <source src="https://auto-eval.github.io/assets/video.mp4" type="video/mp4">
@@ -104,7 +138,11 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div>
-                <img src='/images/paper-images/wsrl/teaser.png' width="280">
+                <!-- <img src='/images/paper-images/wsrl/teaser.png' width="280"> -->
+                <video style="width:100%; max-width:280px; height:auto;" controls autoplay>
+                  <source src="/images/paper-images/wsrl/wsrl_eval_clipped.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">

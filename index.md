@@ -36,6 +36,7 @@ Outside of this, I like to jam on my guitar, play badminton, and watch standups 
 I love connecting with people. If you'd like to get in contact with me, please reach out at [zhiyuan_zhou at berkeley dot edu].
 
 ## Recent News
+- July 2025: New paper out on how to RL with action chunks, check out [Q-chunking](https://colinqiyangli.github.io/qc/)!
 - July 2025: [WSRL](/wsrl/) now works on robots!
 - June 2025: Honored that [AutoEval](https://auto-eval.github.io) won the Best Paper Award at RSS 2025 Robot Evaluation Workshop. And fun to catch up with old and new friends at RSS!
 - May 2025: I'm spending the summer as a research intern at [Physical Intelligence](https://pi.website).
@@ -45,5 +46,5 @@ I love connecting with people. If you'd like to get in contact with me, please r
 - I am going to present my undergrad work [Tiered Reward: Designing Rewards for Specification and Fast Learning of Desired Behavior](/tiered_reward/) at the [RL Conference](https://rl-conference.cc). Come chat with me!
 - Check out my undergrad thesis [Policy Transfer in Lifelong Reinforcement Learning through Learning Generalizing Features](https://cs.brown.edu/media/filer_public/c2/72/c272a1f8-1186-4a85-8f97-cfe8a1a7278a/zhouzhiyuan_honors_thesis.pdf).
 - I've compiled [some resources](/grad_school_apps/) that helped me during my CS Ph.D. application, along with some of my own thoughts. Hopefully this will be helpful to some others out there!
-- I'm honored that our paper [Designing Rewards for Fast Learning](https://arxiv.org/abs/2205.15400?context=cs.AI) is selected for oral presentation at RLDM2022! Check out the [recording](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7adfa2ab-3dde-46ab-b69e-aea800efe5ef) at 1:20:22.
-- Our work [Characterizing the Action-Generalization Gap in Deep Q-Learning](https://arxiv.org/abs/2205.05588) is accepted into RLDM2022!
+<!-- - I'm honored that our paper [Designing Rewards for Fast Learning](https://arxiv.org/abs/2205.15400?context=cs.AI) is selected for oral presentation at RLDM2022! Check out the [recording](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7adfa2ab-3dde-46ab-b69e-aea800efe5ef) at 1:20:22. -->
+<!-- - Our work [Characterizing the Action-Generalization Gap in Deep Q-Learning](https://arxiv.org/abs/2205.05588) is accepted into RLDM2022! -->
