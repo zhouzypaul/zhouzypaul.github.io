@@ -36,7 +36,7 @@ Outside of this, I like to jam on my guitar, play badminton, and watch standups 
 I love connecting with people. If you'd like to get in contact with me, please reach out at [zhiyuan_zhou at berkeley dot edu].
 
 ## Recent News
-- July 2025: New paper out on how to RL with action chunks, check out [Q-chunking](https://colinqiyangli.github.io/qc/)!
+- July 2025: New paper out on how to RL with action chunks, check out [Q-chunking](https://colinqiyangli.github.io/qc/)! Also check out [Behavior Exploration](https://arxiv.org/abs/2507.09041) for a way to make your BC policy explore over the space of expert behaviors.
 - July 2025: [WSRL](/wsrl/) now works on robots!
 - June 2025: Honored that [AutoEval](https://auto-eval.github.io) won the Best Paper Award at RSS 2025 Robot Evaluation Workshop. And fun to catch up with old and new friends at RSS!
 - May 2025: I'm spending the summer as a research intern at [Physical Intelligence](https://pi.website).

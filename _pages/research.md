@@ -23,6 +23,37 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
 
 ### Conferences / Workshops
 
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div>
+                <img src='/images/paper-images/be.png' width="280">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
+                Behavioral Exploration: Learning to Explore via In-Context Adaptation
+              </p>
+              <div class="skills">
+                <span class="skill">In-context learning</span>
+              </div>
+              <a href="https://wagenmaker.github.io/index.html">Andrew Wagenmaker</a>,
+              <strong>Zhiyuan Zhou</strong>,
+              <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
+              <br>
+				<em>International Conference on Machine Learning (ICML)</em>, 2025
+              <br>
+              [<a href="https://arxiv.org/abs/2507.09041">paper</a>]
+              <br>
+              <p>
+              Behavioral exploration (BE) seeks to train policies that can <b>explore</b> over the space of expert demonstration behaviors. We achieve this by training a <b>long-context policy</b> that's conditioned on history and a notion of "coverage-to-go". <br>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+</table>
+
 <table class="paper-highlight" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
           <tr>
@@ -81,6 +112,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <a href="https://kpertsch.github.io">Karl Pertsch</a>,
               <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
               <br>
+        <em>Conference on Robot Learning (CoRL)</em>, 2025. <br>
 				<em>ICLR Robot Learning Workshop</em>, 2025. <FONT COLOR="red">(Oral) </FONT> <br>
         <em>RSS Robot Evaluation Workshop</em>, 2025. <FONT COLOR="red">(Best Paper) </FONT>
               <br>
@@ -139,7 +171,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div>
                 <!-- <img src='/images/paper-images/wsrl/teaser.png' width="280"> -->
-                <video style="width:100%; max-width:280px; height:auto;" controls autoplay>
+                <video style="width:100%; max-width:280px; height:auto;" controls autoplay muted>
                   <source src="/images/paper-images/wsrl/wsrl_eval_clipped.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
