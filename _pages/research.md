@@ -21,6 +21,43 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
 
 ## Publications
 
+### Preprints
+
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div>
+                <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">If we have tons of compute to spend to train value functions, how can we be sure we&#39;re spending it optimally? In our new paper, we analyze the interplay of model size, UTD, and batch size for training value functions achieving optimal performance.<a href="https://t.co/gIF4tzvENS">https://t.co/gIF4tzvENS</a> <a href="https://t.co/MQzPjpHA5X">pic.twitter.com/MQzPjpHA5X</a></p>&mdash; Preston Fu (@preston_fu) <a href="https://twitter.com/preston_fu/status/1962920781387882841?ref_src=twsrc%5Etfw">September 2, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
+                Compute-Optimal Scaling for Value-Based Deep RL
+              </p>
+              <div class="skills">
+                <span class="skill">RL, scaling laws</span>
+              </div>
+              <a href="https://www.prestonfu.com">Preston Fu</a>,
+              <a href="https://olehrybkin.com">Oleh Rybkin</a>,
+              <strong>Zhiyuan Zhou</strong>,
+              <a href="https://scholar.google.com/citations?user=GnEVRtQAAAAJ&hl=en"> Michal Nauman</a>,
+              <a href="https://people.eecs.berkeley.edu/~pabbeel/">Peter Abbeel</a>,
+              <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>,
+              <a href="https://aviralkumar2907.github.io">Aviral Kumar</a>
+              <br>
+				<em>arXiv</em>, 2025
+              <br>
+              [<a href="https://arxiv.org/abs/2508.14881">paper</a>]
+              <br>
+              <p>
+              Big models (TD-)overfit less and produce better TD targets, and allows for using bigger batch sizes. We analyze the interplay between model size, batch size, and UTD for scaling value-based RL, and show <b>scaling laws</b> that shows the budget-optimal data-compute tradeoff. <br>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+</table>
+
 ### Conferences / Workshops
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
