@@ -3,7 +3,7 @@ title: "Research"
 layout: splash
 permalink: /research/
 ---
-My research ambition is to build **autonomous agents** that can solve a wide variety of complex tasks and continuously learn new ones. I believe this calls for decision-making systems that can effectively build on **prior knowledge** (e.g. large-scale pre-training) and **continually** learn to generalize to new tasks. Towards this goal, I work on various aspects of **robotics** and **reinforcement learning**. Currently, I am most excited about autonomous improvement of robotic skills and offline-to-online RL.
+My research ambition is to build **autonomous agents** that can solve a wide variety of complex tasks and continuously learn new ones. I believe this calls for decision-making systems that can effectively build on **prior knowledge** (e.g. large-scale pre-training) and use that prior to **continually** generalize to new tasks quickly. Towards this goal, I work on various aspects of **robotics** and **reinforcement learning**. Currently, I am most excited about incorporating RL into large-scale pre-training for robotic foundation models, and how to post-train robotic policies to extremeley high performance with and without RL.
 I am fortunate to be advised by professor [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/) at UC Berkeley. 
 During my undergrad I was advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael Littman](https://www.littmania.com) at Brown. Please check out my selected work below.
 {: style="text-align: center;font-size:110%;padding-top:40px"}
@@ -21,7 +21,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
 
 ## Publications
 
-### Preprints
+### Conferences / Workshops
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
@@ -46,7 +46,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>,
               <a href="https://aviralkumar2907.github.io">Aviral Kumar</a>
               <br>
-				<em>arXiv</em>, 2025
+				<em>NeurIPS</em>, 2025
               <br>
               [<a href="https://arxiv.org/abs/2508.14881">paper</a>]
               <br>
@@ -57,8 +57,6 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
           </tr>
         </tbody>
 </table>
-
-### Conferences / Workshops
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
@@ -111,7 +109,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <strong>Zhiyuan Zhou</strong>,
               <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
               <br>
-				<em>ICML EXAIT workshop</em>, 2025
+				<em>NeurIPS</em>, 2025
               <br>
               [<a href="https://arxiv.org/abs/2507.07969">paper</a>]
               [<a href="https://colinqiyangli.github.io/qc/">website</a>]

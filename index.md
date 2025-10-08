@@ -28,10 +28,10 @@ permalink: /
 
 Hi there! Welcome to my home page. My name is Zhiyuan, though I usually go by Paul.
 
-I am currently a CS Ph.D. student at [UC Berkeley](https://www.berkeley.edu), advised by professor [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/). I am interested in reinforcement learning and building autonomous intelligent agents.
+I am currently a 3rd year CS Ph.D. student at [UC Berkeley](https://www.berkeley.edu), advised by professor [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/). I am interested in reinforcement learning and building autonomous generalist robots.
 Before this, I graduated magna cum laude from [Brown University](https://www.brown.edu) with an Sc.B. in Applied Math and Computer Science, where I was advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael Littman](https://www.littmania.com) at Brown. Check out my [research page](/research/) for more information.
 
-Outside of this, I like to jam on my guitar, play badminton, and watch standups and movies.
+Outside of this, I like to jam on my guitar, cook, play badminton, and watch standups and movies.
 
 I love connecting with people. If you'd like to get in contact with me, please reach out at [zhiyuan_zhou at berkeley dot edu].
 
