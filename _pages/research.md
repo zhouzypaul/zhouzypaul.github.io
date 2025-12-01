@@ -21,6 +21,47 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
 
 ## Publications
 
+### Preprints
+
+<table class="paper-highlight" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div style="max-width:100%; display:flex; justify-content:center;">
+                <video style="width:100%; max-width:280px; height:auto;" controls autoplay>
+                  <source src="https://website.pi-asset.com/pi06star/cafe_100x.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
+              \(\pi^{*}_{0.6}\): a VLA that Learns from Experience
+              </p>
+              <div class="skills">
+                <span class="skill">Robotics</span>
+                <span class="skill">VLA</span>
+                <span class="skill">RL</span>
+              </div>
+              Physical Intelligence team,
+              ...
+              (<strong>Zhiyuan Zhou</strong>)
+              <!-- <br> -->
+        <!-- <em>Conference on Robot Learning (CoRL)</em>, 2025. <br> -->
+				<!-- <em>ICLR Robot Learning Workshop</em>, 2025. <FONT COLOR="red">(Oral) </FONT> <br> -->
+        <!-- <em>RSS Robot Evaluation Workshop</em>, 2025. <FONT COLOR="red">(Best Paper) </FONT> -->
+              <br>
+              [<a href="https://arxiv.org/pdf/2511.14759">paper</a>]
+              [<a href="https://www.pi.website/blog/pistar06">website</a>]
+              <br>
+              <p>
+              We train a VLA with <b>offline RL</b> through <b>advantage conditioning</b>, enabling the VLA to consume all robotic data, including suboptimal automonous trajectories and on-policy expert interventions. This doubles the task throughput and halves the failure rate on many challening long-horizon tasks, and enables long deployment time (13h) without failure.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+</table>
+
 ### Conferences / Workshops
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -28,7 +69,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div>
-                <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">If we have tons of compute to spend to train value functions, how can we be sure we&#39;re spending it optimally? In our new paper, we analyze the interplay of model size, UTD, and batch size for training value functions achieving optimal performance.<a href="https://t.co/gIF4tzvENS">https://t.co/gIF4tzvENS</a> <a href="https://t.co/MQzPjpHA5X">pic.twitter.com/MQzPjpHA5X</a></p>&mdash; Preston Fu (@preston_fu) <a href="https://twitter.com/preston_fu/status/1962920781387882841?ref_src=twsrc%5Etfw">September 2, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <blockquote class="twitter-tweet" data-media-max-width="250"><p lang="en" dir="ltr">If we have tons of compute to spend to train value functions, how can we be sure we&#39;re spending it optimally? In our new paper, we analyze the interplay of model size, UTD, and batch size for training value functions achieving optimal performance.<a href="https://t.co/gIF4tzvENS">https://t.co/gIF4tzvENS</a> <a href="https://t.co/MQzPjpHA5X">pic.twitter.com/MQzPjpHA5X</a></p>&mdash; Preston Fu (@preston_fu) <a href="https://twitter.com/preston_fu/status/1962920781387882841?ref_src=twsrc%5Etfw">September 2, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">

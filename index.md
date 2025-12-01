@@ -29,6 +29,7 @@ permalink: /
 Hi there! Welcome to my home page. My name is Zhiyuan, though I usually go by Paul.
 
 I am currently a 3rd year CS Ph.D. student at [UC Berkeley](https://www.berkeley.edu), advised by professor [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/). I am interested in reinforcement learning and building autonomous generalist robots.
+I am also a research intern at [Physical Intelligence](https://pi.website) working on RL for VLAs.
 Before this, I graduated magna cum laude from [Brown University](https://www.brown.edu) with an Sc.B. in Applied Math and Computer Science, where I was advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael Littman](https://www.littmania.com) at Brown. Check out my [research page](/research/) for more information.
 
 Outside of this, I like to jam on my guitar, cook, play badminton, and watch standups and movies.
@@ -36,6 +37,7 @@ Outside of this, I like to jam on my guitar, cook, play badminton, and watch sta
 I love connecting with people. If you'd like to get in contact with me, please reach out at [zhiyuan_zhou at berkeley dot edu].
 
 ## Recent News
+- Nov 2025: Finally ready to share my internship work at [PI](https://pi.website) on advantage conditioning! Thrilled that the internship project I led became the recipe for [π*0.6](https://www.pi.website/blog/pistar06), and seeing the VLA actually learning from suboptimal and failure data. I learned a lot from this and I'm very bullish on advantage-conditioned VLAs.
 - Sept 2025: Check out how we scaled RL to [bigger models](https://arxiv.org/abs/2508.14881) and how to spend your compute optimally by setting batch sizes & UTDs correctly
 - July 2025: New paper out on how to RL with action chunks, check out [Q-chunking](https://colinqiyangli.github.io/qc/)! Also check out [Behavior Exploration](https://arxiv.org/abs/2507.09041) for a way to make your BC policy explore over the space of expert behaviors.
 - July 2025: [WSRL](/wsrl/) now works on robots!
@@ -44,8 +46,8 @@ I love connecting with people. If you'd like to get in contact with me, please r
 - March 2025: Excited to announce [AutoEval](https://auto-eval.github.io), a system that autonomously evaluates generalist robot policies in the real world. I'm super excited to open access this resource and see how it can help the community! Give it a try and evaluate your policy now :)
 - New paper out on how to do RL fine-tuning without offline data retention! I'm excited to see how [Warm-start RL (WSRL)](http://arxiv.org/abs/2412.07762) can help scale up RL for real-world tasks. Update: WSRL is accepted at ICLR 2025!
 - I am thrilled to announce the first big project I led in my Ph.D! Check out [SOAR: Autonomous Improvement of Instruction Following Skills via Foundation Models](https://auto-improvement.github.io). Catch SOAR at CoRL 2024 in Munich! 
-- I am going to present my undergrad work [Tiered Reward: Designing Rewards for Specification and Fast Learning of Desired Behavior](/tiered_reward/) at the [RL Conference](https://rl-conference.cc). Come chat with me!
-- Check out my undergrad thesis [Policy Transfer in Lifelong Reinforcement Learning through Learning Generalizing Features](https://cs.brown.edu/media/filer_public/c2/72/c272a1f8-1186-4a85-8f97-cfe8a1a7278a/zhouzhiyuan_honors_thesis.pdf).
+<!-- - I am going to present my undergrad work [Tiered Reward: Designing Rewards for Specification and Fast Learning of Desired Behavior](/tiered_reward/) at the [RL Conference](https://rl-conference.cc). Come chat with me! -->
+<!-- - Check out my undergrad thesis [Policy Transfer in Lifelong Reinforcement Learning through Learning Generalizing Features](https://cs.brown.edu/media/filer_public/c2/72/c272a1f8-1186-4a85-8f97-cfe8a1a7278a/zhouzhiyuan_honors_thesis.pdf). -->
 - I've compiled [some resources](/grad_school_apps/) that helped me during my CS Ph.D. application, along with some of my own thoughts. Hopefully this will be helpful to some others out there!
 <!-- - I'm honored that our paper [Designing Rewards for Fast Learning](https://arxiv.org/abs/2205.15400?context=cs.AI) is selected for oral presentation at RLDM2022! Check out the [recording](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7adfa2ab-3dde-46ab-b69e-aea800efe5ef) at 1:20:22. -->
 <!-- - Our work [Characterizing the Action-Generalization Gap in Deep Q-Learning](https://arxiv.org/abs/2205.05588) is accepted into RLDM2022! -->
