@@ -62,6 +62,43 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
         </tbody>
 </table>
 
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div style="max-width:100%; display:flex; justify-content:center;">
+                <video style="width:100%; max-width:280px; height:auto;" controls autoplay>
+                  <source src="http://retain.yajatyadav.com/videos/retain_twitter_v3_crop.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
+                Robust Finetuning of Vision-Language-Action Robot Policies via Parameter Merging
+              </p>
+              <div class="skills">
+                <span class="skill">Robotics</span>
+              </div>
+              <a href="https://yajatyadav.github.io">Yajat Yadav*</a>,
+              <strong>Zhiyuan Zhou*</strong>,
+              <a href="https://wagenmaker.github.io/">Andrew Wagenmaker</a>,
+              <a href="https://kpertsch.github.io/">Karl Pertsch</a>,
+              <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
+              <br>
+              <br>
+              [<a href="https://retain.yajatyadav.com/">website</a>]
+              [<a href="https://arxiv.org/abs/2601.12890">paper</a>]
+              <br>
+              <p>
+              Finetuning generalist policies easily overfits. Turns out that simply <strong>merging the weights</strong> of a pretrained and finetuned VLA model is surprisingly effective at <strong>robust finetuning</strong>, and is able to 
+              generalize to the finetuning task with different variations, in addition to maintaining generalist abilities.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+</table>
+
 ### Conferences / Workshops
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
