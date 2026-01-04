@@ -88,7 +88,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <br>
               <br>
               [<a href="https://retain.yajatyadav.com/">website</a>]
-              [<a href="https://arxiv.org/abs/2601.12890">paper</a>]
+              [<a href="https://arxiv.org/abs/2512.08333">paper</a>]
               <br>
               <p>
               Finetuning generalist policies easily overfits. Turns out that simply <strong>merging the weights</strong> of a pretrained and finetuned VLA model is surprisingly effective at <strong>robust finetuning</strong>, and is able to 
