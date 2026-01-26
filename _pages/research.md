@@ -62,6 +62,8 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
         </tbody>
 </table>
 
+### Conferences / Workshops
+
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
           <tr>
@@ -86,6 +88,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <a href="https://kpertsch.github.io/">Karl Pertsch</a>,
               <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
               <br>
+              <em>International Conference on Learning Representations (ICLR)</em>, 2026
               <br>
               [<a href="https://retain.yajatyadav.com/">website</a>]
               [<a href="https://arxiv.org/abs/2512.08333">paper</a>]
@@ -99,7 +102,6 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
         </tbody>
 </table>
 
-### Conferences / Workshops
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
