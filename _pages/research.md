@@ -45,7 +45,6 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               </div>
               Ali Amin, Raichelle Aniceto, 
               ...,
-              Ury Zhilinsky,
               <strong>Zhiyuan Zhou</strong>
               <br>
         <em>Robotics Science and Systems (RSS)</em>, 2026.
@@ -61,7 +60,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
         </tbody>
 </table>
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<table class="paper-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -135,7 +134,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
 </table>
 
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<table class="paper-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -170,7 +169,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
         </tbody>
 </table>
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<table class="paper-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -242,7 +241,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
         </tbody>
 </table>
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<table class="paper-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
           <!-- <tr bgcolor="#ffffd0"> -->
           <tr>
@@ -363,7 +362,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
         </tbody>
 </table>
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<table class="paper-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
           <!-- <tr bgcolor="#ffffd0"> -->
           <tr>
@@ -402,7 +401,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
         </tbody>
 </table>
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<table class="paper-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
           <!-- <tr bgcolor="#ffffd0"> -->
           <tr>
@@ -437,7 +436,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
         </tbody>
 </table>
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<table class="paper-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
           <!-- <tr bgcolor="#ffffd0"> -->
           <tr>
@@ -473,7 +472,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
 
 ### School Journal
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<table class="paper-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
           <!-- <tr bgcolor="#ffffd0"> -->
           <tr>
@@ -505,7 +504,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
           </tr>
         </tbody>
 </table>
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<table class="paper-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
           <!-- <tr bgcolor="#ffffd0"> -->
           <tr>
