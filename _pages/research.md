@@ -3,7 +3,7 @@ title: "Research"
 layout: splash
 permalink: /research/
 ---
-My research ambition is to build **autonomous agents** that can solve a wide variety of complex tasks and continuously learn new ones. I believe this calls for decision-making systems that can effectively build on **prior knowledge** (e.g. large-scale pre-training) and use that prior to **continually** generalize to new tasks quickly. Towards this goal, I work on various aspects of **robotics** and **reinforcement learning**. Currently, I am most excited about incorporating RL into large-scale pre-training for robotic foundation models, and how to post-train robotic policies to extremely high performance with and without RL.
+My research focuses on **learning from imperfect real-world data with reinforcement learning**. More broadly, my goal is to develop decision-making systems that can use prior knowledge from large-scale pre-training while continually improving from their own experience in the real world. I am especially interested in how robots can **learn at scale from the full spectrum of real-world experience**, including suboptimal demonstrations, autonomous rollouts, and failure data. Towards this goal, I work on various aspects of **robotics** and **reinforcement learning**, with a current focus on incorporating RL into robotic foundation models and post-training robotic policies to extremely high performance.
 I am fortunate to be advised by professor [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/) at UC Berkeley. 
 During my undergrad I was advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael Littman](https://www.littmania.com) at Brown. Please check out my selected work below.
 {: style="text-align: center;font-size:110%;padding-top:40px"}
@@ -21,7 +21,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
 
 ## Publications
 
-### Preprints
+### Conferences / Workshops
 
 <table class="paper-highlight" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
@@ -43,13 +43,12 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
                 <span class="skill">VLA</span>
                 <span class="skill">RL</span>
               </div>
-              Physical Intelligence team,
-              ...
-              (<strong>Zhiyuan Zhou</strong>)
-              <!-- <br> -->
-        <!-- <em>Conference on Robot Learning (CoRL)</em>, 2025. <br> -->
-				<!-- <em>ICLR Robot Learning Workshop</em>, 2025. <FONT COLOR="red">(Oral) </FONT> <br> -->
-        <!-- <em>RSS Robot Evaluation Workshop</em>, 2025. <FONT COLOR="red">(Best Paper) </FONT> -->
+              Ali Amin, Raichelle Aniceto, 
+              ...,
+              Ury Zhilinsky,
+              <strong>Zhiyuan Zhou</strong>
+              <br>
+        <em>Robotics Science and Systems (RSS)</em>, 2026.
               <br>
               [<a href="https://arxiv.org/pdf/2511.14759">paper</a>]
               [<a href="https://www.pi.website/blog/pistar06">website</a>]
@@ -61,8 +60,6 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
           </tr>
         </tbody>
 </table>
-
-### Conferences / Workshops
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
@@ -97,6 +94,40 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <p>
               Finetuning generalist policies easily overfits. Turns out that simply <strong>merging the weights</strong> of a pretrained and finetuned VLA model is surprisingly effective at <strong>robust finetuning</strong>, and is able to 
               generalize to the finetuning task with different variations, in addition to maintaining generalist abilities.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+</table>
+
+<table class="paper-highlight" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div>
+                <!-- <img src='/images/paper-images/' width="280"> -->
+                <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Everyone knows action chunking is great for imitation learning. It turns out that we can extend its success to RL to better leverage prior data for improved exploration and online sample efficiency! <a href="https://t.co/J5LdRRYbSH">https://t.co/J5LdRRYbSH</a> <br><br>The recipe to achieve this is incredibly simple. 🧵 1/N <a href="https://t.co/c2N7PZL9Pw">pic.twitter.com/c2N7PZL9Pw</a></p>&mdash; Qiyang Li @ ICML (@qiyang_li) <a href="https://twitter.com/qiyang_li/status/1943833366685790693?ref_src=twsrc%5Etfw">July 12, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
+                Reinforcement Learning with Action Chunking
+              </p>
+              <div class="skills">
+                <span class="skill">deep reinforcement learning</span>
+              </div>
+              <a href="https://colinqiyangli.github.io">Qiyang Li</a>,
+              <strong>Zhiyuan Zhou</strong>,
+              <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
+              <br>
+				<em>NeurIPS</em>, 2025
+              <br>
+              [<a href="https://arxiv.org/abs/2507.07969">paper</a>]
+              [<a href="https://colinqiyangli.github.io/qc/">website</a>]
+              [<a href="https://github.com/ColinQiyangLi/qc">code</a>]
+              <br>
+              <p>
+              Q-chunking runs RL on a temporally extended action (<b>action chunking</b>) space with an expressive behavior constraint to leverage prior data for improved exploration and online sample efficiency.<br>
               </p>
             </td>
           </tr>
@@ -164,40 +195,6 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <br>
               <p>
               Behavioral exploration (BE) seeks to train policies that can <b>explore</b> over the space of expert demonstration behaviors. We achieve this by training a <b>long-context policy</b> that's conditioned on history and a notion of "coverage-to-go". <br>
-              </p>
-            </td>
-          </tr>
-        </tbody>
-</table>
-
-<table class="paper-highlight" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div>
-                <!-- <img src='/images/paper-images/' width="280"> -->
-                <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Everyone knows action chunking is great for imitation learning. It turns out that we can extend its success to RL to better leverage prior data for improved exploration and online sample efficiency! <a href="https://t.co/J5LdRRYbSH">https://t.co/J5LdRRYbSH</a> <br><br>The recipe to achieve this is incredibly simple. 🧵 1/N <a href="https://t.co/c2N7PZL9Pw">pic.twitter.com/c2N7PZL9Pw</a></p>&mdash; Qiyang Li @ ICML (@qiyang_li) <a href="https://twitter.com/qiyang_li/status/1943833366685790693?ref_src=twsrc%5Etfw">July 12, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
-                Reinforcement Learning with Action Chunking
-              </p>
-              <div class="skills">
-                <span class="skill">deep reinforcement learning</span>
-              </div>
-              <a href="https://colinqiyangli.github.io">Qiyang Li</a>,
-              <strong>Zhiyuan Zhou</strong>,
-              <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
-              <br>
-				<em>NeurIPS</em>, 2025
-              <br>
-              [<a href="https://arxiv.org/abs/2507.07969">paper</a>]
-              [<a href="https://colinqiyangli.github.io/qc/">website</a>]
-              [<a href="https://github.com/ColinQiyangLi/qc">code</a>]
-              <br>
-              <p>
-              Q-chunking runs RL on a temporally extended action (<b>action chunking</b>) space with an expressive behavior constraint to leverage prior data for improved exploration and online sample efficiency.<br>
               </p>
             </td>
           </tr>
