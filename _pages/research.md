@@ -28,6 +28,45 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div style="max-width:100%; display:flex; justify-content:center;">
+                <img src="https://q-guided-flow.github.io/static/figures/teaser-1.svg" width="280">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
+                Test-Time Gradient Guidance of Flow Policies in Reinforcement Learning
+              </p>
+              <div class="skills">
+                <span class="skill">RL</span>
+                <span class="skill">flow policies</span>
+                <span class="skill">offline RL</span>
+              </div>
+              <strong>Zhiyuan Zhou</strong>,
+              <a href="https://andypeng05.github.io/">Andy Peng</a>,
+              <a href="https://charlesxu0124.github.io/">Charles Xu</a>,
+              <a href="https://colinqiyangli.github.io">Qiyang Li</a>,
+              <a href="https://aldeia.uk/">Jost Tobias Springenberg</a>,
+              <a href="https://kvfrans.com/">Kevin Frans</a>,
+              <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
+              <br>
+              <em>arXiv preprint</em>, 2026
+              <br>
+              [<a href="https://q-guided-flow.github.io/">website</a>]
+              [<a href="https://arxiv.org/abs/2606.11087">paper</a>]
+              [<a href="https://github.com/zhouzypaul/qgf">code</a>]
+              <br>
+              <p>
+              We propose <b>QGF (Q-Guided Flow)</b>, an RL algorithm that performs policy optimization <b>entirely at test time</b>. QGF trains a reference flow policy with BC and a TD-based critic, then uses a <b>novel critic gradient estimator</b> to guide the flow policy toward higher-value actions without any additional policy learning.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+</table>
+
+<table class="paper-highlight" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div style="max-width:100%; display:flex; justify-content:center;">
                 <video style="width:100%; max-width:280px; height:auto;" controls autoplay>
                   <source src="https://website.pi-asset.com/pi06star/cafe_100x.mp4" type="video/mp4">
                   Your browser does not support the video tag.
@@ -49,8 +88,8 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <br>
         <em>Robotics Science and Systems (RSS)</em>, 2026.
               <br>
-              [<a href="https://arxiv.org/pdf/2511.14759">paper</a>]
               [<a href="https://www.pi.website/blog/pistar06">website</a>]
+              [<a href="https://arxiv.org/pdf/2511.14759">paper</a>]
               <br>
               <p>
               We train a VLA with <b>offline RL</b> through <b>advantage conditioning</b>, enabling the VLA to consume all robotic data, including suboptimal automonous trajectories and on-policy expert interventions. This doubles the task throughput and halves the failure rate on many challening long-horizon tasks, and enables long deployment time (13h) without failure.
@@ -121,8 +160,8 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <br>
 				<em>NeurIPS</em>, 2025
               <br>
-              [<a href="https://arxiv.org/abs/2507.07969">paper</a>]
               [<a href="https://colinqiyangli.github.io/qc/">website</a>]
+              [<a href="https://arxiv.org/abs/2507.07969">paper</a>]
               [<a href="https://github.com/ColinQiyangLi/qc">code</a>]
               <br>
               <p>
@@ -228,8 +267,8 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
 				<em>ICLR Robot Learning Workshop</em>, 2025. <FONT COLOR="red">(Oral) </FONT> <br>
         <em>RSS Robot Evaluation Workshop</em>, 2025. <FONT COLOR="red">(Best Paper) </FONT>
               <br>
-              [<a href="https://arxiv.org/abs/2503.24278">paper</a>]
               [<a href="https://auto-eval.github.io/">website</a>]
+              [<a href="https://arxiv.org/abs/2503.24278">paper</a>]
               [<a href="https://github.com/zhouzypaul/auto_eval">code</a>]
               <br>
               <p>
@@ -305,8 +344,8 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <br>
 				<em>International Conference on Learning Representations (ICLR)</em>, 2025
               <br>
-              [<a href="http://arxiv.org/abs/2412.07762">paper</a>]
               [<a href="/wsrl/">website</a>]
+              [<a href="http://arxiv.org/abs/2412.07762">paper</a>]
               [<a href="https://github.com/zhouzypaul/wsrl">code</a>]
               <br>
               <p>
@@ -350,7 +389,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <em>Conference on Robot Learning (CoRL)</em>, 2024.
               <br>
               [<a href="https://auto-improvement.github.io">website</a>]
-              [<a href="https://arxiv.org/abs/2407.20635">arXiv</a>]
+              [<a href="https://arxiv.org/abs/2407.20635">paper</a>]
               [<a href="https://github.com/rail-berkeley/soar">code</a>]
               [<a href="https://rail.eecs.berkeley.edu/datasets/soar_release/">dataset</a>]
               <br>
@@ -388,8 +427,8 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <br>
 				<em>Reinforcement Learning Conference (RLC)</em>, 2024.
               <br>
-              [<a href="https://rlj.cs.umass.edu/2024/papers/Paper159.html">paper</a>]
               [<a href="/tiered_reward/">website</a>]
+              [<a href="https://rlj.cs.umass.edu/2024/papers/Paper159.html">paper</a>]
               [<a href="https://github.com/zhouzypaul/tiered-reward">code</a>]
               [<a href="https://x.com/zhiyuan_zhou_/status/1821261534456402001">thread</a>]
               <br>
@@ -425,7 +464,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <br>
 				<em>Multidisciplinary Conference on Reinforcement Learning and Decision Making (RLDM)</em>, 2022.
               <br>
-              [<a href="https://arxiv.org/abs/2205.05588">arXiv</a>]
+              [<a href="https://arxiv.org/abs/2205.05588">paper</a>]
               [<a href="../pdfs/posters/actgen_rldm_poster.pdf">poster</a>]
               [<a href="https://github.com/camall3n/actgen">code</a>]
               <br>
@@ -459,7 +498,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <br>
 				<em>Multidisciplinary Conference on Reinforcement Learning and Decision Making (RLDM)</em>, 2022. <FONT COLOR="red">(Oral) </FONT>
               <br>
-              [<a href="https://arxiv.org/abs/2205.15400">arXiv</a>]
+              [<a href="https://arxiv.org/abs/2205.15400">paper</a>]
               [<a href="../pdfs/posters/optre_rldm_poster.pdf">poster</a>]
               [<a href="https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7adfa2ab-3dde-46ab-b69e-aea800efe5ef">oral at RLDM</a> at 1:20:00]
               <br>
