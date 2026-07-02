@@ -21,8 +21,6 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
 
 ## Publications
 
-### Conferences / Workshops
-
 <table class="paper-highlight" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
           <tr>
@@ -509,8 +507,6 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
         </tbody>
 </table> 
 
-### School Journal
-
 <table class="paper-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
           <!-- <tr bgcolor="#ffffd0"> -->
@@ -543,10 +539,9 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
           </tr>
         </tbody>
 </table>
-<table class="paper-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<!-- <table class="paper-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
-          <!-- <tr bgcolor="#ffffd0"> -->
-          <tr>
+          <!-- <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div>
                 <img src='https://www.webtunix.ai/static/img/anotation.jpg' width="160">
@@ -575,5 +570,5 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               </p>
             </td>
           </tr>
-        </tbody>
-</table> 
+        </tbody> -->
+<!-- </table>  -->
