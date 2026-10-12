@@ -3,7 +3,7 @@ title: "Research"
 layout: splash
 permalink: /research/
 ---
-My research focuses on **learning from imperfect real-world data with reinforcement learning**. More broadly, my goal is to develop decision-making systems that can use prior knowledge from large-scale pre-training while continually improving from their own experience in the real world. I am especially interested in how robots can **learn at scale from the full spectrum of real-world experience**, including suboptimal demonstrations, autonomous rollouts, and failure data. Towards this goal, I work on various aspects of **robotics** and **reinforcement learning**, with a current focus on incorporating RL into robotic foundation models and post-training robotic policies to extremely high performance.
+My research focuses on **learning from imperfect real-world data with reinforcement learning**. More broadly, my goal is to develop decision-making systems that can use prior knowledge from large-scale pre-training while continually improving from their own experience in the real world. I am especially interested in how robots can **learn at scale from the full spectrum of real-world experience**, including suboptimal demonstrations, autonomous rollouts, and failure data. Towards this goal, I work on various aspects of **robotics** and **reinforcement learning**, with a current focus on pre-training robotic foundation models with RL.
 I am fortunate to be advised by professor [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/) at UC Berkeley. 
 During my undergrad I was advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael Littman](https://www.littmania.com) at Brown. Please check out my selected work below.
 {: style="text-align: center;font-size:110%;padding-top:40px"}
@@ -26,7 +26,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div style="max-width:100%; display:flex; justify-content:center;">
-                <img src="https://q-guided-flow.github.io/static/figures/teaser-1.svg" width="280">
+                <img src="https://q-guided-flow.github.io/static/figures/teaser.svg" width="280">
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -46,7 +46,7 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
               <a href="https://kvfrans.com/">Kevin Frans</a>,
               <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
               <br>
-              <em>arXiv preprint</em>, 2026
+              <em>NeurIPS</em>, 2026
               <br>
               [<a href="https://q-guided-flow.github.io/">website</a>]
               [<a href="https://arxiv.org/abs/2606.11087">paper</a>]
