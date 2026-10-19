@@ -28,8 +28,8 @@ permalink: /
 
 Hi there! Welcome to my home page. My name is Zhiyuan, though I usually go by Paul.
 
-I am currently a 4th year CS Ph.D. student at [UC Berkeley](https://www.berkeley.edu), advised by professor [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/). I am broadly interested in reinforcement learning and training generalist robot policies.
-Previously, I interned at [Physical Intelligence](https://pi.website), where I worked on reinforcement learning for VLAs.
+I am currently a 4th year CS Ph.D. student at [UC Berkeley](https://www.berkeley.edu), advised by professor [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/). I am broadly interested in reinforcement learning (RL) and robot learning, and specifically, in developing stable and scalable RL algorithms for generalist robot policies.
+Previously, I interned at [Physical Intelligence](https://pi.website), where I worked on RL pre-training for VLAs.
 I earned my Sc.B. in Applied Math and Computer Science from [Brown University](https://www.brown.edu). Check out my [research page](/research/) for more information.
 
 Outside of this, I like to jam on my guitar, cook, play badminton, and watch standups and movies.

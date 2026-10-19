@@ -26,6 +26,40 @@ During my undergrad I was advised by professors [George Konidaris](https://cs.br
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div style="max-width:100%; display:flex; justify-content:center;">
+                <img src="https://advantage-guidance.github.io/static/figures/teaser-policy.svg" width="280" alt="Advantage Guidance policy illustration" style="max-width:100%; height:auto;">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <p style="font-family:'Lato',Verdana,Helvetica,sans-serif; font-size:14px;font-weight:700">
+                Reinforcement Learning via Advantage Guidance
+              </p>
+              <div class="skills">
+                <span class="skill">RL</span>
+                <span class="skill">flow policies</span>
+                <span class="skill">advantage conditioning</span>
+              </div>
+              <strong>Zhiyuan Zhou</strong>,
+              <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
+              <br>
+              <em>arXiv preprint</em>, 2026
+              <br>
+              [<a href="https://advantage-guidance.github.io/">website</a>]
+              [<a href="https://arxiv.org/abs/2610.19783">paper</a>]
+              [<a href="https://github.com/zhouzypaul/advantage-guidance">code</a>]
+              <br>
+              <p>
+              We introduce <b>Advantage Guidance</b>, a new RL algorithm that trains with a <b>simple supervised learning loss</b> conditioned on advantages, yet <b>outperforms</b> strong RL methods. The key is to make the policy genuinely responsive to advantage conditioning, then use contrastive diffusion guidance at sampling time for advantage maximization.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+</table>
+
+<table class="paper-highlight" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div style="max-width:100%; display:flex; justify-content:center;">
                 <img src="https://q-guided-flow.github.io/static/figures/teaser.svg" width="280">
               </div>
             </td>
