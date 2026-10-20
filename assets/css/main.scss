@@ -5,5 +5,11 @@ search: false
 
 @charset "utf-8";
 
+// Blue accents from advantage-guidance.github.io; retain the original theme layout.
+$primary-color: #73a4c6;
+$link-color: #4f83a6;
+$link-color-visited: #4f83a6;
+$masthead-link-color: #4f83a6;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials

@@ -3,12 +3,12 @@ title: "Research"
 layout: splash
 permalink: /research/
 ---
-My research focuses on **learning from imperfect real-world data with reinforcement learning**. More broadly, my goal is to develop decision-making systems that can use prior knowledge from large-scale pre-training while continually improving from their own experience in the real world. I am especially interested in how robots can **learn at scale from the full spectrum of real-world experience**, including suboptimal demonstrations, autonomous rollouts, and failure data. Towards this goal, I work on various aspects of **robotics** and **reinforcement learning**, with a current focus on pre-training robotic foundation models with RL.
+My research focuses on **learning from imperfect real-world data with reinforcement learning**. Robot data in the real world is largely imperfect, including suboptimal demonstrations, autonomous policy rollouts during deployment, and failure data, and robots should learn at scale from this **full spectrum of real-world experience**. 
+Towards this goal, I work on various aspects of **robotics** and **reinforcement learning**, with a current focus on stable and scalable off-policy RL algorithms for pre-training robotic foundation models.
 I am fortunate to be advised by professor [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/) at UC Berkeley. 
 During my undergrad I was advised by professors [George Konidaris](https://cs.brown.edu/people/gdk/) and [Michael Littman](https://www.littmania.com) at Brown. Please check out my selected work below.
 {: style="text-align: center;font-size:110%;padding-top:40px"}
 
-[CV](/pdfs/bio/CV.pdf) \|
 [Google Scholar](https://scholar.google.com/citations?user=unQVOJkAAAAJ&hl=en) \|
 [Github](https://github.com/zhouzypaul) \|
 [Twitter](https://twitter.com/zhiyuan_zhou_)

@@ -9,7 +9,7 @@
 }
 
 .skill {
-	background:rgba(129,211,249,0.5);
+	background:rgba(115,164,198,0.5);
 	font-size:12px;
 	margin-right:10px;
 	margin-bottom:10px;
@@ -148,7 +148,7 @@ nav#filter a {
 
 /* Paper highlight class for easy application */
 .paper-highlight {
-    background-color: #ffffd0;  /* Light yellow background */
+    background-color: #eef4f9;  /* Light blue background */
     margin: 0;
     padding: 0;
 }

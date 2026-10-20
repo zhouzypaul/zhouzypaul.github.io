@@ -28,14 +28,14 @@ permalink: /
 
 Hi there! Welcome to my home page. My name is Zhiyuan, though I usually go by Paul.
 
-I am currently a 4th year CS Ph.D. student at [UC Berkeley](https://www.berkeley.edu), advised by professor [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/). I am broadly interested in reinforcement learning (RL) and robot learning, and specifically, in developing stable and scalable RL algorithms for generalist robot policies.
+I am currently a 4th year CS Ph.D. student at [UC Berkeley](https://www.berkeley.edu), advised by professor [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/). I am broadly interested in reinforcement learning (RL) and robot learning, and specifically in developing stable and scalable RL algorithms for generalist robot policies.
 Previously, I interned at [Physical Intelligence](https://pi.website), where I worked on RL pre-training for VLAs.
 I earned my Sc.B. in Applied Math and Computer Science from [Brown University](https://www.brown.edu). Check out my [research page](/research/) for more information.
 
-Outside of this, I like to jam on my guitar, cook, play badminton, and watch standups and movies.
 I love connecting with people. If you'd like to get in contact with me, please reach out at [zhiyuan_zhou at berkeley dot edu].
 
 ## Recent News
+- Oct 2026: We found a new stable way to train RL with stable supervised learning loss! Check out RL via [Advantage Guidance](https://advantage-guidance.github.io). This is an improved advantage-conditioning recipe over my work in π*0.6.
 - June 2026: We developed a new test-time RL algorithm [QGF](https://q-guided-flow.github.io) that works pretty well!
 - Nov 2025: Finally ready to share my internship work at [PI](https://pi.website) on advantage conditioning! Thrilled that the internship project I led became the recipe for [π*0.6](https://www.pi.website/blog/pistar06), and seeing the VLA actually learning from suboptimal and failure data. I learned a lot from this and I'm very bullish on advantage-conditioned VLAs.
 - Sept 2025: Check out how we scaled RL to [bigger models](https://arxiv.org/abs/2508.14881) and how to spend your compute optimally by setting batch sizes & UTDs correctly
